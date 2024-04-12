@@ -1,0 +1,23 @@
+.custom-nav {
+    background-color: #f2edf3; /* Light gray background */
+  }
+  
+  /* Custom style for the Tab.Pane component */
+  .custom-pane {
+    padding: 20px; /* Add padding */
+
+  }
+  .custom-tab {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .active-tab-link {
+    background-color: #007bff; /* Blue background for active tab */
+    color: #fff; /* White text color */
+  }
+  
+  .custom-tab .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+  }

@@ -1,0 +1,9 @@
+.defaultButton{
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3c7edc !important;
+    color: white !important;
+    float: right;
+}

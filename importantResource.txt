@@ -1,0 +1,8 @@
+* For Redux :
+https://redux-toolkit.js.org/usage/usage-with-typescript
+
+* For redux-toolkit-presist 
+https://blog.logrocket.com/persist-state-redux-persist-redux-toolkit-react/
+
+* For react-toastify : 
+https://fkhadra.github.io/react-toastify/introduction/
