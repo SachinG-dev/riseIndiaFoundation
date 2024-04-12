@@ -1,7 +1,4 @@
 import Logo from "../../atom/Logo/Logo";
-// import Navbar from '@/components/molecule/navbar/Navbar';
-// import Navbar from '@/components/molecule/navbar1/Navbar';
-import Navbar from "../../molecule/Navbar/Navbar";
 
 interface HeaderProps {
   // Add any additional props as needed

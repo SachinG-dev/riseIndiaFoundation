@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 // import Navbar from '../molecule/navBar/NavBar';
-import Navbar from "../molecule/Navbar/Navbar";
+
 import SideMenu from "../molecule/SideBarMenu/SideBarMenu";
 import Footer from "../molecule/Footer/Footer";
 import Breadcrumb from "../molecule/Breadcrumb/Breadcrumb";
@@ -18,7 +18,6 @@ export function DashboardLayout() {
 
   return (
     <div className="container-scroller">
-      <Navbar userDetails={userDetails} />
       <div className="container-fluid page-body-wrapper">
         <SideMenu userDetails={userDetails} />
 
