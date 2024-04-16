@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+:root {
+  --primary-color: #00A65B; /* Set your primary color */
+  --secondary-color: #ED7A03; /* Set your secondary color */
+}
+
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; */
-  font-family: "Poppins", "sans-serif" !important;
+  font-family: "Sodo Sans", "Poppins", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
