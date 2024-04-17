@@ -1,0 +1,9 @@
+node_modules/
+
+# No vscode stuff
+.vscode
+
+# No bundled stuff in git
+dist
+
+.env
