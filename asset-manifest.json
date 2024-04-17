@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/riseIndiaFoundation/static/css/main.836152e9.css",
-    "main.js": "/riseIndiaFoundation/static/js/main.d2d95f08.js",
+    "main.css": "/riseIndiaFoundation/static/css/main.978527ce.css",
+    "main.js": "/riseIndiaFoundation/static/js/main.a32f2738.js",
     "static/js/453.69bb3397.chunk.js": "/riseIndiaFoundation/static/js/453.69bb3397.chunk.js",
     "index.html": "/riseIndiaFoundation/index.html",
-    "main.836152e9.css.map": "/riseIndiaFoundation/static/css/main.836152e9.css.map",
-    "main.d2d95f08.js.map": "/riseIndiaFoundation/static/js/main.d2d95f08.js.map",
+    "main.978527ce.css.map": "/riseIndiaFoundation/static/css/main.978527ce.css.map",
+    "main.a32f2738.js.map": "/riseIndiaFoundation/static/js/main.a32f2738.js.map",
     "453.69bb3397.chunk.js.map": "/riseIndiaFoundation/static/js/453.69bb3397.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.836152e9.css",
-    "static/js/main.d2d95f08.js"
+    "static/css/main.978527ce.css",
+    "static/js/main.a32f2738.js"
   ]
 }
