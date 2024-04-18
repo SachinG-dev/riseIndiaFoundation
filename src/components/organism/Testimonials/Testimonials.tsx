@@ -93,7 +93,7 @@ interface ProfileTitleProps {
 }
 
 const ProfileTitle = ({ title }: ProfileTitleProps) => (
-  <p className="mt-2 fs-5-5">{title}</p>
+  <p className="mt-2 fs-5-5 font-dark">{title}</p>
 );
 
 interface ProfileDescriptionProps {
@@ -101,7 +101,7 @@ interface ProfileDescriptionProps {
 }
 
 const ProfileDescription = ({ description }: ProfileDescriptionProps) => (
-  <p className="mt-3 fs-6 text-center">{description}</p>
+  <p className="mt-3 fs-6 text-center font-dark">{description}</p>
 );
 
 interface ProfileCardProps {
@@ -168,7 +168,9 @@ export function Testimonials() {
     infinite: testimonialData.length > 3,
     centerPadding: "510px",
     slidesToShow: 1,
+    autoplay: true,
     speed: 500,
+    autoplaySpeed: 2000,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
@@ -201,8 +203,8 @@ export function Testimonials() {
   return (
     <section className="testimonial-section">
       <h1 className="testimonial-title text-center mb-5">
-        <span className="text-color">“Testimonials of</span> Success and
-        Excellence”
+        <span className="text-color">“Testimonials of </span>
+        <span className="font-dark-gray">Success and Excellence”</span>
       </h1>
       <div className="slider-container">
         <Slider {...settings}>
