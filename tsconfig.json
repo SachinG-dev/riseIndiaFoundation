@@ -20,7 +20,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/svg/*": ["./public/svg/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.tsx", "**/*.ts", "src/reportWebVitals.js"],
