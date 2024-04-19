@@ -5,6 +5,7 @@ import { Testimonials } from "../components/organism/Testimonials/Testimonials";
 import InspiringSuccessStories from "../components/organism/InspiringSuccessStories/InspiringSuccessStories";
 import { ProgramInitiatives } from "../components/organism/WorkInitiatives/ProgramInitiatives";
 import { Layout } from "../components/layout/";
+import { OurPartner } from "../components/organism/OurPartners/OurPartners";
 
 export function Home() {
   return (
@@ -15,6 +16,7 @@ export function Home() {
       <Testimonials />
       <InspiringSuccessStories />
       <ProgramInitiatives />
+      <OurPartner />
     </Layout>
   );
 }
