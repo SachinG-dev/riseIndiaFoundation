@@ -62,7 +62,6 @@ export function Footer() {
         <div className="footer-divider"></div>
         <Row>
           <div className="d-flex justify-content-center flex-wrap gap-5 p-0">
-
             <a href="https://www.facebook.com/RIFNGO/" target="_black">
               <img src="/assets/svg/facebook-icon.svg" alt="Facebook-Icon" />
             </a>
