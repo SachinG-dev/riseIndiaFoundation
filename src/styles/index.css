@@ -37,6 +37,10 @@ table {
   color: #535353;
 }
 
-.font-dark {
-  color: #333333;
+.jumbotron-heading {
+  font-size: calc(45px + (60 - 45) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.font-45 {
+  font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 320)));
 }
