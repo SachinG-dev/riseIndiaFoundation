@@ -1,0 +1,52 @@
+/* Global styles start*/
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+}
+.body-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.font-orange {
+  color: #ed7a03;
+}
+
+.font-green {
+  color: #00a65b;
+}
+
+/* Global styles end*/
+
+.banner-wrapper {
+  background-image: url(../../../../public/assets/images/hero-banner-image.png);
+}
+
+.banner {
+  background: linear-gradient(
+    90deg,
+    #211f1f 3.74%,
+    #1a1a1d 51.39%,
+    rgba(0, 0, 0, 0) 95.63%
+  );
+  color: white;
+  padding: 240px 0 0 200px;
+  height: 961px;
+}
+
+.text-container {
+  max-width: 889px;
+}
+
+.margin-top-56 {
+  margin-top: 56px;
+}
+
+@media (max-width: 786px) {
+  .banner {
+    padding: 90px 0 50px 20px;
+    height: auto;
+  }
+}
