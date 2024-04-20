@@ -8,7 +8,6 @@ import { Layout } from "../components/layout/";
 import { OurPartner } from "../components/organism/OurPartners/OurPartners";
 import { OurReachSection } from "../components/organism/OurReachSection/OurReachSection";
 
-
 export function Home() {
   return (
     <Layout>
@@ -20,7 +19,6 @@ export function Home() {
       <ProgramInitiatives />
       <OurPartner />
       <OurReachSection />
-
     </Layout>
   );
 }
