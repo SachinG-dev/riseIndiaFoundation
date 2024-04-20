@@ -5,6 +5,8 @@ import { PersistGate } from "redux-persist/integration/react";
 import { router } from "./routes/allRoutes";
 import { Toasts } from "./components/atom/Toasts/Toasts";
 import { store, persistor } from "./redux/configureStore";
+import './styles/bootstrap.css';
+import './styles/style.css';
 
 function App() {
   return (

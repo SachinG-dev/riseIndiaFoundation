@@ -2,19 +2,78 @@
 :root {
   --primary-color: #00a65b;
   --secondary-color: #ed7a03;
+  --tertiary-color : #535353;
+  --white-color: #fff;
 }
 
 body {
   margin: 0;
-  font-family: 'Sodo Sans', 'Poppins', sans-serif !important;
+  font-family: 'Sodo Sans', 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, .h1{
+  font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320))) !important;
+	line-height: calc(53px + (90 - 83) * ((100vw - 320px) / (1920 - 320))) !important;
+  color: var(--tertiary-color);
 }
+
+h2, .h2{
+  font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320))) !important;
+	line-height: calc(53px + (90 - 83) * ((100vw - 320px) / (1920 - 320))) !important;
+  color: var(--tertiary-color);
+}
+
+h3, .h3{
+  font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320))) !important;
+	line-height: calc(53px + (90 - 83) * ((100vw - 320px) / (1920 - 320))) !important;
+  color: var(--tertiary-color);
+}
+
+p, ul, ol{
+  font-size: calc(20px + (20 - 20) * ((100vw - 320px) / (1920 - 320))) !important;
+	line-height: calc(32px + (32 - 32) * ((100vw - 320px) / (1920 - 320))) !important;
+  color: var(--tertiary-color);
+}
+
+.primary-cta__button{
+  min-height: 49px;
+  font-size: calc(16px + (16 - 16) * ((100vw - 320px) / (1920 - 320)));
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0px 8px 30px 0px #00000014;
+  padding: 0 62px;
+	text-align: center;
+	text-decoration: none;
+  color: var(--white-color);
+}
+
+.primary-arrow-cta__button{
+  font-size: calc(22px + (22 - 22) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 28px;
+	text-decoration: none;
+  color: var(--primary-color);
+}
+
+.secondary-arrow-cta__button{
+  font-size: calc(22px + (22 - 22) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 600;
+  line-height: 28px;
+	text-decoration: none;
+  color: var(--primary-color);
+}
+.secondary-arrow-cta__button::after {
+	flex-shrink: 0;
+	width: 1.25rem;
+	height: 1.25rem;
+	content: "";
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center;
+	transition: transform 0.2s ease-in-out;
+}
+
 table {
   font-size: 14px;
 }
