@@ -6,6 +6,8 @@ import InspiringSuccessStories from "../components/organism/InspiringSuccessStor
 import { ProgramInitiatives } from "../components/organism/WorkInitiatives/ProgramInitiatives";
 import { Layout } from "../components/layout/";
 import { OurPartner } from "../components/organism/OurPartners/OurPartners";
+import { OurReachSection } from "../components/organism/OurReachSection/OurReachSection";
+
 
 export function Home() {
   return (
@@ -13,10 +15,12 @@ export function Home() {
       <Banner />
       <AboutRiseIndiaFoundation />
       <ImpactSection />
-      <Testimonials />
       <InspiringSuccessStories />
+      <Testimonials />
       <ProgramInitiatives />
       <OurPartner />
+      <OurReachSection />
+
     </Layout>
   );
 }
