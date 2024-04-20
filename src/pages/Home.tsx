@@ -1,4 +1,4 @@
-import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
+import HeroBanner from "../components/organism/HeroBanner/HeroBanner";
 import { AboutRiseIndiaFoundation } from "../components/organism/AboutRiseIndiaFoundation/AboutRiseIndiaFoundation";
 import { ImpactSection } from "../components/organism/ImpactSection/ImpactSection";
 import { Testimonials } from "../components/organism/Testimonials/Testimonials";
@@ -22,11 +22,7 @@ export function Home() {
   const url = "/about-us";
   return (
     <Layout>
-      <HeroBanner
-        heading={heroBannerHeading}
-        description={description}
-        url={url}
-      />
+      <HeroBanner />
       <AboutRiseIndiaFoundation />
       <ImpactSection />
       <InspiringSuccessStories />
