@@ -5,7 +5,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { router } from "./routes/allRoutes";
 import { store, persistor } from "./redux/configureStore";
 import './styles/bootstrap.css';
-import './styles/style.css';
+import './styles/index.css';
 
 function App() {
   return (
