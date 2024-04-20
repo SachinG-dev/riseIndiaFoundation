@@ -6,7 +6,7 @@ import { router } from "./routes/allRoutes";
 import { Toasts } from "./components/atom/Toasts/Toasts";
 import { store, persistor } from "./redux/configureStore";
 import './styles/bootstrap.css';
-import './styles/style.css';
+import './styles/index.css';
 
 function App() {
   return (
