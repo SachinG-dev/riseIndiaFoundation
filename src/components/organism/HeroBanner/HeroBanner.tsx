@@ -2,7 +2,7 @@ import { Row } from "react-bootstrap";
 import "./HeroBanner.css";
 import Button from "../../atom/Buttons/Button";
 
-const Banner = () => {
+export const HeroBanner = () => {
   const onClickFunction = () => {
     const onclickUrl = "www.google.com";
     window.location.href = onclickUrl;
@@ -63,5 +63,3 @@ const Banner = () => {
     </div>
   );
 };
-
-export default Banner;

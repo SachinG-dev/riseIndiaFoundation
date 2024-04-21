@@ -63,23 +63,23 @@ export function Footer() {
         <Row>
           <div className="d-flex justify-content-center flex-wrap gap-5 p-0">
             <a href="#">
-              <img src="./assets/facebook-icon.svg" alt="Facebook-Icon" />
+              <img src="/assets/svg/facebook-icon.svg" alt="Facebook-Icon" />
             </a>
 
             <a href="#">
-              <img src="./assets/instagram-icon.svg" alt="Instagram-Icon" />
+              <img src="/assets/svg/instagram-icon.svg" alt="Instagram-Icon" />
             </a>
 
             <a href="#">
-              <img src="./assets/linkedin-icon.svg" alt="Linkedin-Icon" />
+              <img src="/assets/svg/linkedIn.svg" alt="Linkedin-Icon" />
             </a>
 
             <a href="#">
-              <img src="./assets/tumblr-icon.svg" alt="Tumblr-Icon" />
+              <img src="/assets/svg/tumblr-icon.svg" alt="Tumblr-Icon" />
             </a>
 
             <a href="#">
-              <img src="./assets/twitter-icon.svg" alt="Twitter-Icon" />
+              <img src="/assets/svg/twitter-icon.svg" alt="Twitter-Icon" />
             </a>
           </div>
         </Row>
