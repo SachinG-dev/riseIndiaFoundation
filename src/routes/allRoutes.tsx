@@ -4,15 +4,15 @@ import { ContactUs } from "../pages/ContactUs";
 import { AboutUs } from "../pages/AboutUs";
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/riseIndiaFoundation",
     element: <Home />,
   },
   {
-    path: "/contact-us",
+    path: "/riseIndiaFoundation/contact-us",
     element: <ContactUs />,
   },
   {
-    path: "/about-us",
+    path: "/riseIndiaFoundation/about-us",
     element: <AboutUs />,
   },
 ]);
