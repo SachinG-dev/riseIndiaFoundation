@@ -6,8 +6,9 @@ export function Header() {
       <Navbar bg="light" expand="lg">
         <div className="container">
           <img
-            src="/assets/images/rise-india-foundation-logo.svg"
+            src="/assets/images/rise-india-logo.png"
             alt="rise-india-foundation-logo"
+            style={{ height: "6vh" }}
           />
 
           <Navbar.Toggle aria-controls="navbarNav" />

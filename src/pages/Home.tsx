@@ -1,4 +1,4 @@
-import HeroBanner from "../components/organism/HeroBanner/HeroBanner";
+import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
 import { AboutRiseIndiaFoundation } from "../components/organism/AboutRiseIndiaFoundation/AboutRiseIndiaFoundation";
 import { ImpactSection } from "../components/organism/ImpactSection/ImpactSection";
 import { Testimonials } from "../components/organism/Testimonials/Testimonials";
@@ -15,10 +15,11 @@ export function Home() {
       <AboutRiseIndiaFoundation />
       <ImpactSection />
       <InspiringSuccessStories />
+
       <Testimonials />
       <ProgramInitiatives />
-      <OurPartner />
       <OurReachSection />
+      <OurPartner />
     </Layout>
   );
 }
