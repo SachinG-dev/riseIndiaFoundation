@@ -15,7 +15,7 @@ export function OurReachSection() {
               1
             </span>
           </div>
-          <h5 className='pt-4 stats-titles'>States Covered</h5>
+          <h3 className='pt-4 stats-titles'>States Covered</h3>
         </div>
         <div className='mb-4'>
           <div className='stats-circle'>
@@ -24,7 +24,7 @@ export function OurReachSection() {
             </span>
             <span className='font-color-orange font-45 fw-bold'>Thousand</span>
           </div>
-          <h5 className='pt-4 stats-titles'>Direct Beneficiaries</h5>
+          <h3 className='pt-4 stats-titles'>Direct Beneficiaries</h3>
         </div>
         <div className='mb-4'>
           <div className='stats-circle'>
@@ -33,9 +33,9 @@ export function OurReachSection() {
             </span>
             <span className='font-color-orange font-45 fw-bold'>Lakh</span>
           </div>
-          <h5 className='pt-4 stats-titles text-black'>
+          <h3 className='pt-4 stats-titles text-black'>
             Indirect Beneficiaries
-          </h5>
+          </h3>
         </div>
       </div>
     </section>
