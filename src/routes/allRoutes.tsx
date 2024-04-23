@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { ContactUs } from "../pages/ContactUs";
 import { AboutUs } from "../pages/AboutUs";
+import { DonationAndTaxBenefits } from "../pages/DonationAndTaxBenefits";
+import { JoinUs } from "../pages/JoinUs";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -14,5 +16,13 @@ export const router = createBrowserRouter([
   {
     path: "/about-us",
     element: <AboutUs />,
+  },
+  {
+    path: "/donation-and-tax-benefits",
+    element: <DonationAndTaxBenefits />,
+  },
+  {
+    path: "/join-us",
+    element: <JoinUs />,
   },
 ]);
