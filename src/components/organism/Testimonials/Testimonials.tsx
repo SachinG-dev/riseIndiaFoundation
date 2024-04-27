@@ -168,9 +168,10 @@ export function Testimonials() {
     infinite: testimonialData.length > 3,
     centerPadding: "510px",
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     autoplaySpeed: 2000,
+    arrow: false,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
