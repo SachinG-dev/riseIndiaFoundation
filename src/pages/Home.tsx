@@ -16,9 +16,9 @@ export function Home() {
       <ImpactSection />
       <InspiringSuccessStories />
 
-      <Testimonials />
       <ProgramInitiatives />
       <OurReachSection />
+      <Testimonials />
       <OurPartner />
     </Layout>
   );

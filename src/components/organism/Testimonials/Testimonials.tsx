@@ -135,10 +135,7 @@ interface NextArrowProps {
 const NextArrow = ({ className, onClick }: NextArrowProps) => {
   return (
     <div className={className} onClick={onClick}>
-      <img
-        src="http://localhost:3000/assets/images/left-arrow-indicator.svg"
-        alt="Prev"
-      />
+      <img src="/assets/images/left-arrow-indicator.svg" alt="Prev" />
     </div>
   );
 };
@@ -151,10 +148,7 @@ interface PrevArrowProps {
 const PrevArrow = ({ className, onClick }: PrevArrowProps) => {
   return (
     <div className={className} onClick={onClick}>
-      <img
-        src="http://localhost:3000/assets/images/right-arrow-indicator.svg"
-        alt="Prev"
-      />
+      <img src="/assets/images/right-arrow-indicator.svg" alt="Prev" />
     </div>
   );
 };
@@ -168,41 +162,78 @@ export function Testimonials() {
     infinite: testimonialData.length > 3,
     centerPadding: "510px",
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 500,
     autoplaySpeed: 2000,
-    arrow: false,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
       {
+        breakpoint: 1280,
+        settings: {
+          className: "center",
+          centerMode: true,
+          infinite: testimonialData.length > 3,
+          centerPadding: "340px",
+          slidesToShow: 1,
+          autoplay: false,
+          speed: 500,
+          autoplaySpeed: 2000,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          infinite: true,
-          dots: true,
+          dots: false,
+          className: "center",
+          centerMode: true,
+          infinite: testimonialData.length > 3,
+          centerPadding: "140px",
+          slidesToShow: 1,
+          autoplay: false,
+          speed: 500,
+          autoplaySpeed: 2000,
+          prevArrow: undefined,
+          nextArrow: undefined,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          dots: false,
+          className: "center",
+          centerMode: true,
+          infinite: testimonialData.length > 3,
+          centerPadding: "100px",
+          slidesToShow: 1,
+          autoplay: false,
+          speed: 500,
+          autoplaySpeed: 2000,
+          prevArrow: undefined,
+          nextArrow: undefined,
         },
       },
       {
         breakpoint: 480,
         settings: {
+          dots: false,
+          className: "center",
+          centerMode: true,
+          infinite: testimonialData.length > 3,
+          centerPadding: "84px",
           slidesToShow: 1,
-          slidesToScroll: 1,
+          autoplay: false,
+          speed: 500,
+          autoplaySpeed: 2000,
+          prevArrow: undefined,
+          nextArrow: undefined,
         },
       },
     ],
   };
 
   return (
-    <section className="testimonial-section">
+    <section className="testimonial-section py-5">
       <h1 className="testimonial-title text-center mb-5">
         <span className="text-color">“Testimonials of </span>
         <span className="font-dark-gray">Success and Excellence”</span>
