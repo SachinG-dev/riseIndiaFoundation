@@ -15,7 +15,6 @@ export function Home() {
       <AboutRiseIndiaFoundation />
       <ImpactSection />
       <InspiringSuccessStories />
-
       <ProgramInitiatives />
       <OurReachSection />
       <Testimonials />
