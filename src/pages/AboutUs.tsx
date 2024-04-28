@@ -4,9 +4,13 @@ import { ImpactSection } from "../components/organism/ImpactSection/ImpactSectio
 import { Layout } from "../components/layout";
 
 export function AboutUs() {
+  const heroBannerHeading = <h1 className="font-orange">About Us</h1>;
+  const description =
+    "At Rise India Foundation, we are committed to creating positive change and uplifting communities across the nation. Our relentless dedication drives us to provide vital support and opportunities to those in need, empowering them to realize their full potential.";
+
   return (
     <Layout>
-      <HeroBanner />
+      <HeroBanner heading={heroBannerHeading} description={description} />
       <AboutUsDetailsSection />
       <ImpactSection />
     </Layout>

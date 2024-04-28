@@ -4,6 +4,8 @@ import { ContactUs } from "../pages/ContactUs";
 import { AboutUs } from "../pages/AboutUs";
 import { DonationAndTaxBenefits } from "../pages/DonationAndTaxBenefits";
 import { JoinUs } from "../pages/JoinUs";
+import { OurWork } from "../pages/OurWork";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -24,5 +26,9 @@ export const router = createBrowserRouter([
   {
     path: "/join-us",
     element: <JoinUs />,
+  },
+  {
+    path: "/our-work",
+    element: <OurWork />,
   },
 ]);
