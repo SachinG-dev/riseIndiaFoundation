@@ -27,7 +27,7 @@ export function AboutRiseIndiaFoundation() {
       </p>
       <p>
         <a
-          href="#"
+          href="/about-us"
           className="text-color font-size-22 fw-semibold text-decoration-none"
         >
           <span>Read more </span>
