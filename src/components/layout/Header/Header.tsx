@@ -29,9 +29,14 @@ export function Header() {
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Campaigns" id="services-dropdown">
-                <NavDropdown.Item href="#">Service 1</NavDropdown.Item>
-                <NavDropdown.Item href="#">Service 2</NavDropdown.Item>
-                <NavDropdown.Item href="#">Service 3</NavDropdown.Item>
+                <NavDropdown.Item href="#">Campaingns</NavDropdown.Item>
+                <NavDropdown.Item href="#">Education</NavDropdown.Item>
+                <NavDropdown.Item href="#">Health</NavDropdown.Item>
+                <NavDropdown.Item href="#">Skill Development</NavDropdown.Item>
+                <NavDropdown.Item href="#">Advocacy</NavDropdown.Item>
+                <NavDropdown.Item href="#">Drushti</NavDropdown.Item>
+                <NavDropdown.Item href="#">Sanjeevani</NavDropdown.Item>
+                <NavDropdown.Item href="#">Kaabil</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/contact-us">Contact us</Nav.Link>
               <Button variant="outline-success" className="ms-lg-5 py-2 px-4">
