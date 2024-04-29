@@ -5,13 +5,13 @@ import { VolunteerInfoSection } from "../components/molecule/VolunteerInfoSectio
 import { JoinUsForm } from "../components/molecule/JoinUsForm/JoinUsForm";
 import { JoinUsCarousels } from "../components/organism/JoinUsCarousels/JoinUsCarousels";
 
-export function JoinUs() {
+export function Internship() {
   return (
     <Layout>
       <HeroBanner />
       <VolunteerInfoSection />
       <JoinUsCarousels />
-      <JoinUsForm title="Join Us" sheetName="Join Us" />
+      <JoinUsForm title="Internship" sheetName="Internship" />
     </Layout>
   );
 }

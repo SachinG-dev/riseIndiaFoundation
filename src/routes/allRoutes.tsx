@@ -5,6 +5,7 @@ import { AboutUs } from "../pages/AboutUs";
 import { DonationAndTaxBenefits } from "../pages/DonationAndTaxBenefits";
 import { JoinUs } from "../pages/JoinUs";
 import { OurWork } from "../pages/OurWork";
+import { Internship } from "../pages/Internship";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
   {
     path: "/join-us",
     element: <JoinUs />,
+  },
+  {
+    path: "/internship",
+    element: <Internship />,
   },
   {
     path: "/our-work",

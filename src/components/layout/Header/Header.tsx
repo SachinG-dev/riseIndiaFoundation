@@ -24,7 +24,7 @@ export function Header() {
                   Donation & Tax Benefits
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/join-us">Volunteer</NavDropdown.Item>
-                <NavDropdown.Item href="/join-us?type=internship">
+                <NavDropdown.Item href="/internship">
                   Internship
                 </NavDropdown.Item>
               </NavDropdown>

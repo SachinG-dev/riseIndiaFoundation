@@ -1,16 +1,43 @@
+import { useRef, FormEvent } from "react";
 import "./JoinUsForm.css";
 
-export const JoinUsForm = () => {
+interface JoinUsFormProps {
+  title: string;
+  sheetName: string;
+}
+export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
+  const formRef = useRef<HTMLFormElement>(null!);
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const scriptUrl =
+      "https://script.google.com/macros/s/AKfycbzS1h9XDbiqhuD_K-cDtyM1rEPmPj0Mc30yzs6jxJv10HZ0LIpwloDwUtXnquuew_YC/exec";
+    e.preventDefault();
+
+    const formData = new FormData(formRef.current);
+    formData.append("sheetName", sheetName);
+
+    fetch(scriptUrl, { method: "POST", body: formData })
+      .then((res) => {
+        console.log("SUCCESSFULLY SUBMITTED");
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="joinUsFormSectionBackground">
       <div className="container p-4 ">
-        <h2 className="text-center fw-bold">Join Us</h2>
-        <form>
+        <h2 className="text-center fw-bold">{title}</h2>
+        <form
+          method="post"
+          ref={formRef}
+          name="google-sheet"
+          onSubmit={handleSubmit}
+        >
           <div className="mb-3 row">
             <div className="col-md-6 mb-3">
               <input
                 type="text"
-                id="fullName"
+                name="fullName"
                 className="form-control"
                 placeholder="Full Name"
               />
@@ -18,7 +45,7 @@ export const JoinUsForm = () => {
             <div className="col-md-6 mb-3">
               <input
                 type="text"
-                id="dob"
+                name="dob"
                 className="form-control"
                 placeholder="DOB (DD/MM/YYYY)"
               />
@@ -28,7 +55,7 @@ export const JoinUsForm = () => {
             <div className="col-md-6 mb-3">
               <input
                 type="text"
-                id="phoneNumber"
+                name="phoneNumber"
                 className="form-control"
                 placeholder="Phone Number"
               />
@@ -36,7 +63,7 @@ export const JoinUsForm = () => {
             <div className="col-md-6 mb-3">
               <input
                 type="email"
-                id="email"
+                name="email"
                 className="form-control"
                 placeholder="Email"
               />
@@ -45,7 +72,7 @@ export const JoinUsForm = () => {
           <div className="mb-3">
             <input
               type="text"
-              id="areasAvailable"
+              name="areasAvailable"
               className="form-control"
               placeholder="Areas Available"
             />
@@ -53,7 +80,7 @@ export const JoinUsForm = () => {
           <div className="mb-3">
             <input
               type="text"
-              id="skillSet"
+              name="skillSet"
               className="form-control"
               placeholder="Your Skill Set"
             />
@@ -61,7 +88,7 @@ export const JoinUsForm = () => {
           <div className="mb-3">
             <input
               type="text"
-              id="availability"
+              name="availability"
               className="form-control"
               placeholder="Your Availability"
             />
@@ -70,7 +97,7 @@ export const JoinUsForm = () => {
             <div className="col-md-6 mb-3">
               <input
                 type="text"
-                id="state"
+                name="state"
                 className="form-control"
                 placeholder="State"
               />
@@ -78,7 +105,7 @@ export const JoinUsForm = () => {
             <div className="col-md-6 mb-3">
               <input
                 type="text"
-                id="city"
+                name="city"
                 className="form-control"
                 placeholder="City"
               />
