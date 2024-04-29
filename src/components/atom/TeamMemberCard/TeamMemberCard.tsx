@@ -14,7 +14,7 @@ export function TeamMemberCard({
     <div className="card shadow">
       <img
         src={imageUrl}
-        className="card-img-top mx-auto mt-3"
+        className="card-img-top mx-auto mt-3 rounded-circle"
         alt={name}
         style={{ width: "200px", height: "200px", objectFit: "cover" }}
       />

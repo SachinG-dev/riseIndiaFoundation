@@ -1,7 +1,10 @@
 .testimonial-section {
-    background-color: #F4F4F4;
-    padding-top: 48px;
-    padding-bottom: 157px;
+    background-color: hsl(0, 0%, 96%);
+}
+
+.testimonial-title {
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .testimonial-card {
@@ -18,45 +21,45 @@
     color: var(--primary-color);
 }
 
-.testimonial-title {
-    font-size: 60px;
-    font-weight: 700;
-}
-
 .fs-5-5 {
     font-size: 18px;
 }
 
-.slick-list {
-    margin: 0 -70px;
-  }
+.slick-initialized { 
+    overflow: hidden; 
+}
+
+.slick-list { 
+    margin: 0 -70px; 
+}
   
 .slick-list .slick-slide > div {
-padding: 0 80px;
+    padding: 0 80px;
+}
+
+.slick-prev, .slick-next {
+    top: unset;
+    bottom: 62px;
+    z-index: 1;
 }
 
 .slick-prev {
     left: 12%;
-    top: 456px;
-    z-index: 1;
 }
 
 .slick-next {
     right: 12%;
-    top: 456px;
-    z-index: 1;
 }
 
-.slick-prev::before {
-    content: none;
-}
-.slick-next::before {
+.slick-prev::before, .slick-next::before {
     content: none;
 }
 
 .slick-dots {
     position: relative;
-    top: 60px;
+    bottom: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .slick-dots li button:before {
@@ -74,3 +77,50 @@ padding: 0 80px;
     color: #535353;
     border: 8px #535353 solid;
 }
+
+/* Medium devices (tablets, less than 1280px)  */
+@media (max-width: 1279.98px) { 
+    .slick-list { 
+        margin: 0 -50px; 
+    }
+      
+    .slick-list .slick-slide > div {
+        padding: 0 40px;
+    }
+ }
+
+/* Medium devices (tablets, less than 1024px)  */
+@media (max-width: 1023.98px) { 
+    .slick-list { 
+        margin: 0 -30px; 
+    }
+      
+    .slick-list .slick-slide > div {
+        padding: 0 20px;
+    }
+ }
+
+ /* Small devices (landscape phones, less than 600px)  */
+@media (max-width: 599.98px) { 
+    .slick-list { 
+        margin: 0 -10px; 
+    }
+      
+    .slick-list .slick-slide > div {
+        padding: 0 20px;
+    }
+ }
+
+/* X-Small devices (portrait phones, less than 480px) */
+@media (max-width: 479.98px) { 
+    .slick-list { 
+        margin: 0 -4px; 
+    }
+      
+    .slick-list .slick-slide > div {
+        padding: 0 10px;
+    }
+ }
+
+
+
