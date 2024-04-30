@@ -1,8 +1,15 @@
 .impactSection {
-  background-color: #000000bf;
   padding: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url('../../../../public/assets/images/impact-section-bg.png');
+  background-position: center;
+  background-size: cover;
 }
 
 .impactSection .font-size-title {
   font-size: 50px;
+}
+
+.impactSectionDescription {
+  font-size: 16px !important;
 }
