@@ -1,5 +1,4 @@
 import { AboutUsCustomerCard } from '../../../components/atom/AboutUsCustomerCard/AboutUsCustomerCard';
-import { OurCommitment } from './OurCommitment';
 
 export function AboutUsDetailsSection() {
   const aboutRiseIndiaKeyFeature = [
@@ -30,6 +29,29 @@ export function AboutUsDetailsSection() {
       headingColor: 'font-dark-gray',
       description:
         'Dedicated to creating long-lasting, sustainable solutions that address the root of social issues, striving to leave a positive, enduring impact on the communities we serve. Adopting environmentally conscious practices and promoting responsible resource management, to contribute to a more sustainable and resilient future for both people and the planet.',
+    },
+  ];
+
+  const CommitmentFeature = [
+    {
+      featureHeading: 'Empowering Communities Through Education:',
+      featureDescription:
+        'We are dedicated to providing quality education and skill-building opportunities to underprivileged communities,to break the cycle of poverty and realize their full potential.',
+    },
+    {
+      featureHeading: 'Promoting Health and Well-being:',
+      featureDescription:
+        'We commit to improving the overall health and well-being of individuals and communities by conducting healthcare initiatives, awareness campaigns, along with providing access to essential medical resources.',
+    },
+    {
+      featureHeading: 'Fostering Sustainable Livelihoods:',
+      featureDescription:
+        'We strive to create sustainable livelihoods for marginalized groups by offering vocational training, entrepreneurship development, and supporting micro-enterprises, ensuring long-term economic empowerment.',
+    },
+    {
+      featureHeading: 'Advocating for Social Justice and Equality: ',
+      featureDescription:
+        'We actively work towards creating an inclusive society by advocating for the rights and dignity of all individuals, regardless of gender, caste, religion, or socio-economic background, fostering an environment of equality and justice.',
     },
   ];
 
@@ -69,11 +91,38 @@ export function AboutUsDetailsSection() {
       );
     });
   };
+
+  const OurCommitment = () => {
+    return (
+      <section className='bg-light-gray'>
+        <div className='container py-5'>
+          <h2 className='fw-bold pt-4 jumbotron-heading'>
+            Our&nbsp;<span className='font-color-orange'>Commitment</span>
+          </h2>
+          <div>
+            <ol className='mt-4'>
+              {CommitmentFeature.map((keyFeature, index) => {
+                return (
+                  <li className='font-dark-gray py-4' key={index}>
+                    <span className='fw-bold'>
+                      {keyFeature.featureHeading}&nbsp;
+                    </span>
+                    <span>{keyFeature.featureDescription}</span>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
   return (
     <>
       {aboutUsParagraph()}
       {displayInfo()}
-      <OurCommitment />
+      {OurCommitment()}
     </>
   );
 }
