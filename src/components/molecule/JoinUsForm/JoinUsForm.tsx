@@ -305,7 +305,10 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
             />
             {isAreasAvailableErrored && (
               <span className="text-danger pl-12">
-                <small>Areas Available must be required and valid</small>
+                <small>
+                  Areas Available must be required and valid (accept 30 char
+                  max)
+                </small>
               </span>
             )}
           </div>
@@ -338,7 +341,9 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
             />
             {isAvailabilityErrored && (
               <span className="text-danger pl-12">
-                <small>Availability must be required and valid</small>
+                <small>
+                  Availability must be required and valid (accept 30 char max)
+                </small>
               </span>
             )}
           </div>
