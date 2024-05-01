@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 interface CustomCardProps {
@@ -21,9 +21,10 @@ const CustomCard = ({
         backgroundColor: '#FFFFFF40',
         color: 'white',
       }}
+      className='h-100 justify-content-center'
     >
-      <div className='row g-0'>
-        <div className='col-md-4 align-content-center'>
+      <div className='row g-0 align-items-center'>
+        <div className='col-md-4'>
           <Card.Img src={imageSrc} alt='Card image' className='m-2' />
         </div>
         <div className='col-md-8 ps-4'>
