@@ -1,4 +1,5 @@
 import { useRef, FormEvent, useState } from "react";
+import { toast } from 'react-toastify';
 import "./JoinUsForm.css";
 
 interface JoinUsFormProps {
@@ -50,7 +51,7 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
 
       fetch(scriptUrl, { method: "POST", body: formData })
         .then((res) => {
-          console.log("SUCCESSFULLY SUBMITTED");
+          toast('Successfully submitted');
         })
         .catch((err) => console.log(err));
     }
@@ -215,14 +216,15 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
   };
 
   return (
-    <div className="joinUsFormSectionBackground">
-      <div className="container p-4 ">
-        <h2 className="text-center fw-bold">{title}</h2>
+    <section className="section-background p-4">
+      <div className="container p-4">
+        <h2 className="text-center fw-bold mb-4 font-dark-gray">{title}</h2>
         <form
           method="post"
           ref={formRef}
           name="google-sheet"
           onSubmit={handleSubmit}
+          className="join-form"
         >
           <div className="mb-3 row">
             <div className="col-md-6 mb-3">
@@ -382,7 +384,7 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
           <div className="mb-3 text-center">
             <button
               type="submit"
-              className="btn btn-success px-5"
+              className="btn btn-success btn-height px-5"
               disabled={validFrom}
             >
               Submit
@@ -390,6 +392,6 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
