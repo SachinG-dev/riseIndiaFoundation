@@ -9,7 +9,7 @@ export function Footer() {
   };
   return (
     <footer className="w-auto">
-      <div className=" row d-flex flex-column flex-md-row justify-content-center gutter-unset">
+      <div className=" row d-flex flex-column flex-md-row justify-content-center g-0">
         <Button onClick={onClickFunction} className="col footer-button">
           Become a Volunteer
         </Button>
