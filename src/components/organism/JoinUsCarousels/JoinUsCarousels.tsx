@@ -1,5 +1,5 @@
-import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import "./JoinUsCarousels.css";
 
 export function JoinUsCarousels() {
   const images = [

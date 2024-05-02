@@ -9,15 +9,18 @@ export function DonationAndTaxBenefits() {
   const donationAndTaxBenefitsData = websiteData["DonationAndTaxBenefits"];
   const heroBannerHeading = (
     <h1>
-      Let's Make A <span className="text-green">Difference</span>
+      Let's Make A <span className="font-green">Difference</span>
     </h1>
   );
+  const url = "/about-us";
   console.log({ donationAndTaxBenefitsData });
   return (
     <Layout>
       <HeroBanner
         heading={heroBannerHeading}
         description={donationAndTaxBenefitsData["heroBanner"]["description"]}
+        url={url}
+        backgroundImage="../../assets/images/get-involve-hero.webp"
       />
       <DonationAndTaxBenefitsInfoSection />
       <DonationForm />

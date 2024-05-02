@@ -4,8 +4,10 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { router } from "./routes/allRoutes";
 import { store, persistor } from "./redux/configureStore";
-import './styles/bootstrap.css';
-import './styles/index.css';
+import { ToastContainer } from "react-toastify";
+import "./styles/bootstrap.css";
+import "./styles/index.css";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <PersistGate loading={null} persistor={persistor}>
         <RouterProvider router={router} />
       </PersistGate>
+      <ToastContainer />
     </Provider>
   );
 }

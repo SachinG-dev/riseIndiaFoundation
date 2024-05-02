@@ -1,4 +1,49 @@
-.donationSectionBackground {
+.donation {
   background: #00a65b08;
   padding: 5rem;
+}
+
+.textarea textarea, .donation__form input {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #535353 !important;
+  border: 2px solid #9D9D9D !important;
+}
+
+.textarea textarea::placeholder, .donation__form input::placeholder {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(83, 83, 83, 0.59) !important;
+}
+
+.btn-height {
+  height: 49px;
+}
+
+.donation__form--label {
+  font-size: 32px !important;
+  font-weight: 700;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-around
+}
+
+.radio--label {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 49px;
+  color: #535353;
+}
+
+.form-check-input:checked {
+  background-image: radial-gradient(circle, 
+    green calc(40% - 4px), 
+    white calc(40% - 2px), 
+    white calc(40% + 2px), 
+    green calc(40% + 4px), 
+    green 100%
+  );
+  border: unset !important;
 }

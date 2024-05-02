@@ -1,7 +1,7 @@
 export function VolunteerInfoSection() {
   return (
     <div className="container p-5 text-center">
-      <h2 className="fw-bold text-center">Volunteer</h2>
+      <h2 className="fw-bold text-center font-green">Volunteer</h2>
       <p className="text-center">
         Rise India Foundation is a team of enthusiastic individuals from diverse
         backgrounds working towards conscientizing the underprivileged citizen

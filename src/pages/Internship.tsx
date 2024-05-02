@@ -5,10 +5,10 @@ import { VolunteerInfoSection } from "../components/molecule/VolunteerInfoSectio
 import { JoinUsForm } from "../components/molecule/JoinUsForm/JoinUsForm";
 import { JoinUsCarousels } from "../components/organism/JoinUsCarousels/JoinUsCarousels";
 
-export function JoinUs() {
+export function Internship() {
   const heroBannerHeading = (
     <h1>
-      Lend A <span className="font-orange">Hand</span>
+      <span className="font-green">Learn</span> With Us
     </h1>
   );
 
@@ -27,7 +27,7 @@ export function JoinUs() {
       />
       <VolunteerInfoSection />
       <JoinUsCarousels />
-      <JoinUsForm title="Join Us" sheetName="Join Us" />
+      <JoinUsForm title="Internship" sheetName="Internship" />
     </Layout>
   );
 }
