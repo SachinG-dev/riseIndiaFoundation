@@ -1,11 +1,12 @@
-import { FormEvent, useRef, useState } from "react";
-import { toast } from 'react-toastify';
+import { ChangeEvent, FocusEvent, FormEvent, useRef, useState } from "react";
+import { toast } from "react-toastify";
 import "./DonationForm.css";
+import Loader from "../../atom/Loader/Loader";
 
 export const DonationForm = () => {
   const formRef = useRef<HTMLFormElement>(null!);
   const [validFrom, setValidForm] = useState<boolean>(true);
-  const [paymentMethod, setPaymentMethod] = useState<string>("");
+  const [paymentMethod, setPaymentMethod] = useState<string>("once");
   const [amount, setAmount] = useState<string>("");
   const [fullName, setFullName] = useState<string>("");
   const [dob, setDob] = useState<string>("");
@@ -21,33 +22,29 @@ export const DonationForm = () => {
   const [isPhoneNumberErrored, setIsPhoneNumberErrored] =
     useState<boolean>(false);
   const [isEmailErrored, setIsEmailErrored] = useState<boolean>(false);
-    useState<boolean>(false);
+  useState<boolean>(false);
   const [isPanNumberErrored, setIsPanNumberErrored] = useState<boolean>(false);
-  const [isPinCodeErrored, setIsPinCodeErrored] =
-    useState<boolean>(false);
+  const [isPinCodeErrored, setIsPinCodeErrored] = useState<boolean>(false);
   const [isAddressErrored, setIsAddressErrored] = useState<boolean>(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    console.log('paymentMethod==> ', paymentMethod);
-    console.log('tt=> ', 
-    validFrom,
-    amount, 
-    fullName, 
-    dob, 
-    phoneNumber, 
-    email, 
-    panNumber, 
-    pinCode, 
-    address,
-  );
+  const [loading, setLoading] = useState<boolean>(false);
 
+  const resetFrom = () => {
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // if (!validFrom) {
+    setLoading(true);
+    if (!validFrom) {
+      setValidForm(true);
       const scriptUrl =
         "https://script.google.com/macros/s/AKfycbzS1h9XDbiqhuD_K-cDtyM1rEPmPj0Mc30yzs6jxJv10HZ0LIpwloDwUtXnquuew_YC/exec";
 
       const formData = new FormData(formRef.current);
-      formData.append("sheetName", 'Donation');
+      formData.append("sheetName", "Donation");
 
       // Trim values before appending to formData
       const entriesArray = Array.from(formData.entries());
@@ -59,24 +56,31 @@ export const DonationForm = () => {
 
       fetch(scriptUrl, { method: "POST", body: formData })
         .then((res) => {
-          toast('Successfully submitted');
+          toast("Successfully submitted");
+          resetFrom();
         })
-        .catch((err) => console.log(err));
-    // }
+        .catch((err) => console.log(err))
+        .finally(() => {
+          setLoading(false);
+          setValidForm(false);
+        });
+    }
   };
 
-  const onBlurHandler = (e: any) => {
+  const onBlurHandler = (
+    e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
 
     // Regular expressions for field validation
-    const amountRegex = /^\d{10}$/;
+    const amountRegex = /^\d{1,10}$/;
     const fullNameRegex = /^[a-zA-Z\s]{1,20}$/;
     const dobRegex = /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/;
     const phoneNumberRegex = /^\d{10}$/;
     const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
     const panNumberRegex = /^[A-Z]{5}[0-9]{4}[A-Z]$/;
     const pinCodeRegex = /^\d{6}$/;
-    const AddressRegex = /^.{1,30}$/;
+    const AddressRegex = /^.{1,100}$/;
 
     switch (name) {
       case "Amount":
@@ -125,21 +129,22 @@ export const DonationForm = () => {
 
     // Check if all fields are valid
     const isFormValid =
-      amountRegex.test(amount) && 
+      paymentMethod &&
+      amountRegex.test(amount) &&
       fullNameRegex.test(fullName) &&
       dobRegex.test(dob) &&
       phoneNumberRegex.test(phoneNumber) &&
       emailRegex.test(email) &&
       panNumberRegex.test(panNumber) &&
       pinCodeRegex.test(pinCode) &&
-      paymentMethod &&
       AddressRegex.test(address);
 
-    // Set the validForm state
     setValidForm(!isFormValid);
   };
 
-  const onChangeHandler = (e: any) => {
+  const onChangeHandler = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
     switch (name) {
       case "paymentMethod":
@@ -197,7 +202,7 @@ export const DonationForm = () => {
         break;
     }
 
-    if (
+    const isFormValid =
       paymentMethod &&
       amount &&
       fullName &&
@@ -206,19 +211,16 @@ export const DonationForm = () => {
       email &&
       panNumber &&
       pinCode &&
-      address
-    ) {
-      setValidForm(false);
-    } else {
-      setValidForm(true);
-    }
+      address;
+
+    setValidForm(!isFormValid);
   };
 
   return (
     <section className="donation">
       <div className="container">
         <h2 className="text-center fw-bold mb-4 font-dark-gray">I Pledge</h2>
-        <form 
+        <form
           className="donation__form"
           method="post"
           ref={formRef}
@@ -251,7 +253,10 @@ export const DonationForm = () => {
                   id="monthly"
                   value="monthly"
                 />
-                <label className="form-check-label radio--label" htmlFor="monthly">
+                <label
+                  className="form-check-label radio--label"
+                  htmlFor="monthly"
+                >
                   MONTHLY
                 </label>
               </div>
@@ -266,18 +271,17 @@ export const DonationForm = () => {
               onChange={onChangeHandler}
               onBlur={onBlurHandler}
             />
-             {isAmountErrored && (
-                <span className="text-danger pl-12">
-                  <small>
-                    Amount must be required and valid (accept digits
-                    only)
-                  </small>
-                </span>
-              )}
+            {isAmountErrored && (
+              <span className="text-danger pl-12">
+                <small>
+                  Amount must be required and valid (accept digits only)
+                </small>
+              </span>
+            )}
           </div>
           <div className="mb-3 row">
             <div className="col-md-6 mb-3">
-            <input
+              <input
                 type="text"
                 name="fullName"
                 className="form-control"
@@ -294,7 +298,7 @@ export const DonationForm = () => {
               )}
             </div>
             <div className="col-md-6 mb-3">
-            <input
+              <input
                 type="date"
                 name="dob"
                 className="form-control"
@@ -312,14 +316,13 @@ export const DonationForm = () => {
           </div>
           <div className="mb-3 row">
             <div className="col-md-6 mb-3">
-            <input
+              <input
                 type="text"
                 name="phoneNumber"
                 className="form-control"
                 placeholder="Phone Number*"
                 onChange={onChangeHandler}
                 onBlur={onBlurHandler}
-                
               />
               {isPhoneNumberErrored && (
                 <span className="text-danger pl-12">
@@ -331,7 +334,7 @@ export const DonationForm = () => {
               )}
             </div>
             <div className="col-md-6 mb-3">
-            <input
+              <input
                 type="email"
                 name="email"
                 className="form-control"
@@ -358,7 +361,10 @@ export const DonationForm = () => {
               />
               {isPanNumberErrored && (
                 <span className="text-danger pl-12">
-                  <small>Pan Number must be required and valid (accept 10 alphanumeric)</small>
+                  <small>
+                    Pan Number must be required and valid (accept 10 alphanum,
+                    uppercase)
+                  </small>
                 </span>
               )}
             </div>
@@ -373,7 +379,9 @@ export const DonationForm = () => {
               />
               {isPinCodeErrored && (
                 <span className="text-danger pl-12">
-                  <small>Pin Code must be required and valid (accept 6 digit only)</small>
+                  <small>
+                    Pin Code must be required and valid (accept 6 digit only)
+                  </small>
                 </span>
               )}
             </div>
@@ -387,16 +395,24 @@ export const DonationForm = () => {
               rows={3}
               onChange={onChangeHandler}
               onBlur={onBlurHandler}
+              autoComplete="off"
             ></textarea>
             {isAddressErrored && (
-                <span className="text-danger pl-12">
-                  <small>Address must be required and valid (accept upto 30 characters)</small>
-                </span>
-              )}
+              <span className="text-danger pl-12">
+                <small>
+                  Address must be required and valid (accept upto 100
+                  characters)
+                </small>
+              </span>
+            )}
           </div>
           <div className="mb-3 text-center">
-            <button type="submit" className="btn btn-success btn-height px-5 m-3">
-              Donate
+            <button
+              type="submit"
+              className="btn btn-success btn-height px-5 m-3"
+              disabled={validFrom}
+            >
+              Donate <Loader show={loading} />
             </button>
           </div>
         </form>

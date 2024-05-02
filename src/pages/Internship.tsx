@@ -8,8 +8,7 @@ import { JoinUsCarousels } from "../components/organism/JoinUsCarousels/JoinUsCa
 export function Internship() {
   const heroBannerHeading = (
     <h1>
-      <span className="font-green">Learn</span>{" "}
-       With Us  
+      <span className="font-green">Learn</span> With Us
     </h1>
   );
 
@@ -20,11 +19,12 @@ export function Internship() {
 
   return (
     <Layout>
-      <HeroBanner 
+      <HeroBanner
         heading={heroBannerHeading}
         description={description}
         url={url}
-        backgroundImage="../../assets/images/get-involve-hero.webp"/>
+        backgroundImage="../../assets/images/get-involve-hero.webp"
+      />
       <VolunteerInfoSection />
       <JoinUsCarousels />
       <JoinUsForm title="Internship" sheetName="Internship" />

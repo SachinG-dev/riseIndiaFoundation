@@ -1,5 +1,6 @@
-import { useRef, FormEvent, useState } from "react";
-import { toast } from 'react-toastify';
+import { useRef, FormEvent, useState, FocusEvent, ChangeEvent } from "react";
+import { toast } from "react-toastify";
+import Loader from "../../atom/Loader/Loader";
 import "./JoinUsForm.css";
 
 interface JoinUsFormProps {
@@ -32,11 +33,21 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
   const [isStateErrored, setIsStateErrored] = useState<boolean>(false);
   const [isCityErrored, setIsCityErrored] = useState<boolean>(false);
 
+  const [loading, setLoading] = useState<boolean>(false);
+
+  const resetFrom = () => {
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+  };
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
     if (!validFrom) {
+      setValidForm(true);
       const scriptUrl =
         "https://script.google.com/macros/s/AKfycbzS1h9XDbiqhuD_K-cDtyM1rEPmPj0Mc30yzs6jxJv10HZ0LIpwloDwUtXnquuew_YC/exec";
-      e.preventDefault();
 
       const formData = new FormData(formRef.current);
       formData.append("sheetName", sheetName);
@@ -51,13 +62,18 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
 
       fetch(scriptUrl, { method: "POST", body: formData })
         .then((res) => {
-          toast('Successfully submitted');
+          toast("Successfully submitted");
+          resetFrom();
         })
-        .catch((err) => console.log(err));
+        .catch((err) => console.log(err))
+        .finally(() => {
+          setLoading(false);
+          setValidForm(false);
+        });
     }
   };
 
-  const onBlurHandler = (e: any) => {
+  const onBlurHandler = (e: FocusEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     // Regular expressions for field validation
@@ -137,7 +153,7 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
     setValidForm(!isFormValid);
   };
 
-  const onChangeHandler = (e: any) => {
+  const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     switch (name) {
       case "fullName":
@@ -387,7 +403,7 @@ export const JoinUsForm = ({ title, sheetName }: JoinUsFormProps) => {
               className="btn btn-success btn-height px-5"
               disabled={validFrom}
             >
-              Submit
+              Submit <Loader show={loading} />
             </button>
           </div>
         </form>

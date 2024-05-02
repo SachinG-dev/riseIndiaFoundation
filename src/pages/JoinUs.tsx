@@ -19,11 +19,12 @@ export function JoinUs() {
 
   return (
     <Layout>
-      <HeroBanner 
+      <HeroBanner
         heading={heroBannerHeading}
         description={description}
         url={url}
-        backgroundImage="../../assets/images/get-involve-hero.webp"/>
+        backgroundImage="../../assets/images/get-involve-hero.webp"
+      />
       <VolunteerInfoSection />
       <JoinUsCarousels />
       <JoinUsForm title="Join Us" sheetName="Join Us" />

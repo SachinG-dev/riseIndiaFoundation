@@ -6,18 +6,27 @@ interface HeroBannerProps {
   heading?: React.ReactNode;
   description?: string;
   url?: string;
-  backgroundImage?: string
+  backgroundImage?: string;
 }
 
-const backgroundImageDefault = '../../../../assets/images/hero-banner-image.png';
+const backgroundImageDefault =
+  "../../../../assets/images/hero-banner-image.png";
 
-export const HeroBanner = ({ heading, description, url, backgroundImage = backgroundImageDefault}: HeroBannerProps) => {
+export const HeroBanner = ({
+  heading,
+  description,
+  url,
+  backgroundImage = backgroundImageDefault,
+}: HeroBannerProps) => {
   const onClickFunction = () => {
     const onclickUrl = "www.google.com";
     window.location.href = onclickUrl;
   };
   return (
-    <div className="banner-wrapper" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div
+      className="banner-wrapper"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <div className="banner">
         <section className="container">
           <Row>
