@@ -62,23 +62,26 @@ export function Footer() {
         <div className="footer-divider"></div>
         <Row>
           <div className="d-flex justify-content-center flex-wrap gap-5 p-0">
-            <a href="#">
+            <a href="https://www.facebook.com/RIFNGO/" target="_black">
               <img src="/assets/svg/facebook-icon.svg" alt="Facebook-Icon" />
             </a>
 
-            <a href="#">
+            <a href="https://www.instagram.com/rifngo/?hl=en" target="_black">
               <img src="/assets/svg/instagram-icon.svg" alt="Instagram-Icon" />
             </a>
 
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/rise-india-foundation/?viewAsMember=true"
+              target="_black"
+            >
               <img src="/assets/svg/linkedIn.svg" alt="Linkedin-Icon" />
             </a>
 
-            <a href="#">
+            <a href="https://www.tumblr.com/blog/rifngo" target="_black">
               <img src="/assets/svg/tumblr-icon.svg" alt="Tumblr-Icon" />
             </a>
 
-            <a href="#">
+            <a href="https://twitter.com/rifngo" target="_black">
               <img src="/assets/svg/twitter-icon.svg" alt="Twitter-Icon" />
             </a>
           </div>
