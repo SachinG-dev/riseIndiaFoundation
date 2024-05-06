@@ -22,11 +22,7 @@ export function Home() {
   const url = "/about-us";
   return (
     <Layout>
-      <HeroBanner
-        heading={heroBannerHeading}
-        description={description}
-        url={url}
-      />
+      <HeroBanner />
       <AboutRiseIndiaFoundation />
       <ImpactSection />
       <InspiringSuccessStories />

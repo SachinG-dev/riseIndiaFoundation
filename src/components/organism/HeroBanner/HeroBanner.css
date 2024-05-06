@@ -19,10 +19,9 @@ h1 {
 }
 
 /* Global styles end*/
+
 .banner-wrapper {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(../../../../public/assets/images/hero-banner-image.png);
 }
 
 .banner {

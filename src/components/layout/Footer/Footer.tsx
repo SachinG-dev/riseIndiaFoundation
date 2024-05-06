@@ -9,7 +9,7 @@ export function Footer() {
   };
   return (
     <footer className="w-auto">
-      <div className=" row d-flex flex-column flex-md-row justify-content-center g-0">
+      <div className=" row d-flex flex-column flex-md-row justify-content-center gutter-unset">
         <Button onClick={onClickFunction} className="col footer-button">
           Become a Volunteer
         </Button>
@@ -62,6 +62,7 @@ export function Footer() {
         <div className="footer-divider"></div>
         <Row>
           <div className="d-flex justify-content-center flex-wrap gap-5 p-0">
+
             <a href="https://www.facebook.com/RIFNGO/" target="_black">
               <img src="/assets/svg/facebook-icon.svg" alt="Facebook-Icon" />
             </a>
