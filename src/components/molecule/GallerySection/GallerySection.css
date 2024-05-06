@@ -5,3 +5,20 @@
 .gallerySection--margin {
   margin: 83px 160px 192px 160px;
 }
+
+.gallerySection_wrapper {
+  max-width: 1520px;
+}
+
+.gallery-bg {
+  padding-left: 50px;
+  background-image: linear-gradient(
+    180deg,
+    #beaaaa00 0%,
+    #3c3131c4 1.2%,
+    rgb(265 117 117 / 0%) 142.63%
+  );
+  height: 60px;
+
+  color: var(--secondary-color) !important;
+}

@@ -13,7 +13,12 @@ export function Home() {
   const heroSectionData = pageData.heroSection;
   return (
     <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} buttonText={heroSectionData.buttonText} backgroundImageUrl={heroSectionData.backgroundImageUrl}  />
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        buttonText={heroSectionData.buttonText}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
       <AboutRiseIndiaFoundation />
       <ImpactSection />
       <InspiringSuccessStories />

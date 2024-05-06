@@ -8,7 +8,11 @@ export function AboutUs() {
   const heroSectionData = pageData.heroSection;
   return (
     <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  />
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
       <AboutUsDetailsSection />
       <ImpactSection />
     </Layout>

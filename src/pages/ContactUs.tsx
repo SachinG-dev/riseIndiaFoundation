@@ -9,7 +9,11 @@ export function ContactUs() {
   const heroSectionData = pageData.heroSection;
   return (
     <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  />
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
       <OurTeam />
       <FAQSection />
       <GoogleMap />

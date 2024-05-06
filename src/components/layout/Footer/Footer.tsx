@@ -2,24 +2,29 @@ import { Col, Row } from "react-bootstrap";
 import "./Footer.css";
 import {Button} from "../../atom/Buttons/Button";
 
-export function Footer() {
+interface footerProps {
+  cta?: boolean;
+}
+export const Footer = ({ cta }: footerProps) => {
   const onClickFunction = () => {
     const onclickUrl = "https://www.google.com";
     window.location.href = onclickUrl;
   };
   return (
     <footer className="w-auto">
-      <div className=" row d-flex flex-column flex-md-row justify-content-center gutter-unset">
-        <Button onClick={onClickFunction} className="col footer-button">
-          Become a Volunteer
-        </Button>
-        <Button onClick={onClickFunction} className="col footer-button">
-          Make a Donation
-        </Button>
-        <Button onClick={onClickFunction} className="col footer-button">
-          Support a Campaign
-        </Button>
-      </div>
+      {cta && (
+        <div className=" row d-flex flex-column flex-md-row justify-content-center g-0">
+          <Button onClick={onClickFunction} className="col footer-button">
+            Become a Volunteer
+          </Button>
+          <Button onClick={onClickFunction} className="col footer-button">
+            Make a Donation
+          </Button>
+          <Button onClick={onClickFunction} className="col footer-button">
+            Support a Campaign
+          </Button>
+        </div>
+      )}
       <section className="d-flex flex-column justify-content-center bg footer-padding">
         <Row>
           <Col>
@@ -31,31 +36,37 @@ export function Footer() {
           <Col className="footer-heading">
             <div>Support</div>
             <div className="footer-text d-flex flex-column">
-              <span>Contact us</span>
-              <span>FAQs</span>
-              <span>Terms & Conditions</span>
-              <span>Policies</span>
+              <a href="/contact-us">Contact us</a>
+              <a href="#">FAQs</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Policies</a>
             </div>
           </Col>
           <Col className="footer-heading">
             <div>Rise India Foundation</div>
             <div className="footer-text d-flex flex-column gap-1">
-              <span>About us</span>
-              <span>Our Work</span>
-              <span className="text-decoration-underline">
+              <a href="/about-us">About us</a>
+              <a href="/our-work">Our Work</a>
+              <a
+                href="mailto:change@riseindiafoundation.in"
+                className="text-decoration-underline"
+              >
                 change@riseindiafoundation.in
-              </span>
-              <span className="text-decoration-underline">
+              </a>
+              <a
+                href="mailto:donation@riseindiafoundation.in"
+                className="text-decoration-underline"
+              >
                 donation@riseindiafoundation.in
-              </span>
+              </a>
             </div>
           </Col>
           <Col className="footer-heading">
             <div>Join us</div>
             <div className="footer-text d-flex flex-column">
-              <span>Become a volunteer</span>
-              <span>Make a donation</span>
-              <span>Support a Campaign</span>
+              <a href="/internship">Become a volunteer</a>
+              <a href="/donation-and-tax-benefits">Make a donation</a>
+              <a href="/campaign">Support a Campaign</a>
             </div>
           </Col>
         </Row>
@@ -74,7 +85,7 @@ export function Footer() {
               href="https://www.linkedin.com/company/rise-india-foundation/?viewAsMember=true"
               target="_black"
             >
-              <img src="/assets/svg/linkedIn.svg" alt="Linkedin-Icon" />
+              <img src="/assets/svg/linkedIn-icon.svg" alt="Linkedin-Icon" />
             </a>
 
             <a href="https://www.tumblr.com/blog/rifngo" target="_black">
@@ -89,4 +100,4 @@ export function Footer() {
       </section>
     </footer>
   );
-}
+};
