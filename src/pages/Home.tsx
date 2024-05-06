@@ -21,8 +21,12 @@ export function Home() {
 
   const url = "/about-us";
   return (
-    <Layout>
-      <HeroBanner />
+    <Layout footerCta={true}>
+      <HeroBanner
+        heading={heroBannerHeading}
+        description={description}
+        url={url}
+      />
       <AboutRiseIndiaFoundation />
       <ImpactSection />
       <InspiringSuccessStories />

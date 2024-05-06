@@ -15,7 +15,7 @@ export function DonationAndTaxBenefits() {
   const url = "/about-us";
   console.log({ donationAndTaxBenefitsData });
   return (
-    <Layout>
+    <Layout footerCta={true}>
       <HeroBanner
         heading={heroBannerHeading}
         description={donationAndTaxBenefitsData["heroBanner"]["description"]}

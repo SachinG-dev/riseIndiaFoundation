@@ -9,7 +9,7 @@ export function AboutUs() {
     "At Rise India Foundation, we are committed to creating positive change and uplifting communities across the nation. Our relentless dedication drives us to provide vital support and opportunities to those in need, empowering them to realize their full potential.";
 
   return (
-    <Layout>
+    <Layout footerCta={true}>
       <HeroBanner heading={heroBannerHeading} description={description} />
       <AboutUsDetailsSection />
       <ImpactSection />

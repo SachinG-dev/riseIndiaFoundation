@@ -10,7 +10,7 @@ export function ContactUs() {
     "Empowering Voices, Catalyzing Change. Rise India Foundation is dedicated to raising awareness, advocating for social justice, and driving impactful policy changes for a more equitable and inclusive society.";
 
   return (
-    <Layout>
+    <Layout footerCta={true}>
       <HeroBanner heading={heroBannerHeading} description={description} />
       <OurTeam />
       <FAQSection />

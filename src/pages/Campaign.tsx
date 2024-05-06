@@ -16,7 +16,36 @@ export const Campaign = () => {
   return (
     <Layout>
       <HeroBanner heading={heroBannerHeading} description={description} />
-      <GallerySection heading={CampaignHeading} />
+      <GallerySection
+        heading={CampaignHeading}
+        images={[
+          {
+            src: "/assets/images/disaster-relief.png",
+            alt: "Disaster-Relief",
+            style: { width: "550px", height: "420px" },
+          },
+          {
+            src: "/assets/images/education.png",
+            alt: "Education",
+            style: { width: "550px", height: "420px" },
+          },
+          {
+            src: "/assets/images/health.png",
+            alt: "Health",
+            style: { width: "550px", height: "420px" },
+          },
+          {
+            src: "/assets/images/advocacy.png",
+            alt: "Advocacy",
+            style: { width: "550px", height: "420px" },
+          },
+          {
+            src: "/assets/images/skill-development.png",
+            alt: "Skills-Development",
+            style: { width: "550px", height: "420px" },
+          },
+        ]}
+      />
     </Layout>
   );
 };

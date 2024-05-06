@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 :root {
   --primary-color: #00a65b;
   --secondary-color: #ed7a03;
@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: 'Sodo Sans', 'Poppins', sans-serif;
+  font-family: "Sodo Sans", "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -55,6 +55,16 @@ ol {
   line-height: calc(
     32px + (32 - 32) * ((100vw - 320px) / (1920 - 320))
   ) !important;
+}
+
+h5,
+.h5 {
+  font-size: calc(
+    26px + (60 - 50) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
+  line-height: calc(
+    42px + (90 - 83) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
   color: var(--tertiary-color);
 }
 
@@ -88,7 +98,7 @@ ol {
   flex-shrink: 0;
   width: 1.25rem;
   height: 1.25rem;
-  content: '';
+  content: "";
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -109,8 +119,16 @@ table {
   font-size: 10px;
 }
 
+.font-color-green {
+  color: var(--primary-color);
+}
+
 .font-color-orange {
-  color: #ed7a03;
+  color: var(--secondary-color);
+}
+
+.font-white {
+  color: var(--white-color);
 }
 
 .font-dark {
@@ -118,7 +136,7 @@ table {
 }
 
 .font-dark-gray {
-  color: #535353;
+  color: var(--tertiary-color);
 }
 
 .jumbotron-heading {

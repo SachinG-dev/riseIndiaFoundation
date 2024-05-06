@@ -17,7 +17,7 @@ export function OurWork() {
 
   const url = "/about-us";
   return (
-    <Layout>
+    <Layout footerCta={true}>
       <HeroBanner
         heading={heroBannerHeading}
         description={description}
