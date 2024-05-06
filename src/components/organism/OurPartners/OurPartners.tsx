@@ -7,13 +7,16 @@ export function OurPartner() {
           <img src="/assets/images/reliableRecycle.png" alt="Partner 1" />
         </div>
         <div className="partner-logo">
-          <img src="/assets/images/reliableRecycle.png" alt="Partner 2" />
+          <img src="/assets/images/ourPartner1.png" alt="Partner 2" />
         </div>
         <div className="partner-logo">
-          <img src="/assets/images/reliableRecycle.png" alt="Partner 3" />
+          <img src="/assets/images/ourPartner2.png" alt="Partner 3" />
         </div>
         <div className="partner-logo">
-          <img src="/assets/images/reliableRecycle.png" alt="Partner 4" />
+          <img src="/assets/images/ourPartner3.png" alt="Partner 4" />
+        </div>
+        <div className="partner-logo">
+          <img src="/assets/images/ourPartner4.png" alt="Partner 4" />
         </div>
       </div>
     </div>
