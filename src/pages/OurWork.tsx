@@ -1,28 +1,16 @@
 import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
 import { OurSuccessStories } from "../components/organism/OurSuccessStories/OurSuccessStories";
-
 import { Layout } from "../components/layout/";
-
 import { WhatWeDo } from "../components/molecule/WhatWeDo/WhatWeDo";
 import { OurCampaigns } from "../components/organism/OurCampaigns/OurCampaigns";
+import pageData from "../websiteData/ourWorkPageData.json";
+
 export function OurWork() {
-  const heroBannerHeading = (
-    <h1>
-      <span className="font-orange">Education </span> is Empowerment
-    </h1>
-  );
+  const heroSectionData = pageData.heroSection;
 
-  const description =
-    "We believe in spreading the power of education to all. We teach and guide students toward the field of their choice with moral values and behaviour.";
-
-  const url = "/about-us";
   return (
     <Layout>
-      <HeroBanner
-        heading={heroBannerHeading}
-        description={description}
-        url={url}
-      />
+      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  buttonText={heroSectionData.buttonText} buttonURL={heroSectionData.buttonUrl}/>
       <WhatWeDo />
       <OurCampaigns />
       <OurSuccessStories embedId="4kLviL8XwAI" />

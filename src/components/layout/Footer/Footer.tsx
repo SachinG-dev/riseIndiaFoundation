@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import "./Footer.css";
-import Button from "../../atom/Buttons/Button";
+import {Button} from "../../atom/Buttons/Button";
 
 export function Footer() {
   const onClickFunction = () => {

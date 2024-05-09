@@ -4,27 +4,14 @@ import { Layout } from "../components/layout";
 import { VolunteerInfoSection } from "../components/molecule/VolunteerInfoSection/VolunteerInfoSection";
 import { JoinUsForm } from "../components/molecule/JoinUsForm/JoinUsForm";
 import { JoinUsCarousels } from "../components/organism/JoinUsCarousels/JoinUsCarousels";
+import pageData from "../websiteData/joinUsPageData.json";
 
 export function JoinUs() {
-  const heroBannerHeading = (
-    <h1>
-      Lend A <span className="font-orange">Hand</span>
-    </h1>
-  );
-
-  const description =
-    "At Rise India Foundation, we are committed to creating positive change and uplifting communities across the nation. Our relentless dedication drives us to provide vital support and opportunities to those in need, empowering them to realize their full potential.";
-
-  const url = "/about-us";
-
+  const heroSectionData = pageData.heroSection;
+  
   return (
     <Layout>
-      <HeroBanner
-        heading={heroBannerHeading}
-        description={description}
-        url={url}
-        backgroundImage="../../assets/images/get-involve-hero.webp"
-      />
+      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  buttonText={heroSectionData.buttonText} buttonURL={heroSectionData.buttonUrl}/>
       <VolunteerInfoSection />
       <JoinUsCarousels />
       <JoinUsForm title="Join Us" sheetName="Join Us" />
