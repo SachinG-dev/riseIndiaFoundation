@@ -1,66 +1,42 @@
-import React from "react";
-import "./Button.css";
+import React, { ReactNode } from "react";
+import clsx from "clsx";
 
-interface ButtonProps {
-  onClick: () => void;
-  type?: "button" | "reset" | "submit"; // Make the type prop optional
-  disabled?: boolean;
-  label?: string;
-  children?: React.ReactNode; // Add children prop
-  color?:
-    | "inherit"
-    | "primary"
-    | "secondary"
-    | "error"
-    | "warning"
-    | "info"
-    | "success";
-  size?: "small" | "medium" | "large";
-  variant?:
-    | "text"
-    | "outlined"
-    | "contained"
-    | "primary"
-    | "secondary"
-    | "link";
+type ButtonVariant =
+  | "primary"
+  | "secondary"
+  | "primaryArrow"
+  | "secondaryArrow"
+  | "default";
+
+export interface ButtonProps {
+  variant?: ButtonVariant;
   className?: string;
-  isLoading?: boolean;
+  onClick?: () => void;
+  children: ReactNode;
+  type?: "button" | "submit" | "reset";
 }
 
-function Button({
-  onClick,
-  type,
-  disabled = false,
-  label,
-  children, // Destructure children prop
-  color,
-  size,
-  variant,
+export function Button({
+  variant = "primary",
+  children,
   className,
-  isLoading = false,
+  onClick,
+  type = "button",
 }: ButtonProps) {
+  const buttonClasses = clsx(className, {
+    "primary-cta__button": variant === "primary" || variant === "default",
+    "secondary-cta__button": variant === "secondary",
+    "primary-arrow-cta__button": variant === "primaryArrow",
+    "secondary-arrow-cta__button": variant === "secondaryArrow",
+  });
+
   return (
     <button
       onClick={onClick}
-      // type="button"
-      type={type !== "submit" ? "button" : "submit"} // Use the provided type or default to 'button'
-      disabled={disabled}
-      className={`${color || ""} ${size || ""} ${variant || ""} ${className || ""}`}
+      className={buttonClasses}
+      type={type}
     >
-      {isLoading ? (
-        <>
-          <span
-            className="spinner-grow spinner-grow-sm"
-            role="status"
-            aria-hidden="true"
-          />
-          <span className="sr-only">Loading...</span>
-        </>
-      ) : (
-        label || children
-      )}
+      {!!children && <span className="peer font-medium">{children}</span>}
     </button>
   );
 }
-
-export default Button;

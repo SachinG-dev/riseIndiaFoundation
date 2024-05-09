@@ -1,0 +1,9 @@
+{
+    "heroSection" : {
+      "title" : "Lend A <span class='text-secondary'>Hand</span>",
+      "desc" : "At Rise India Foundation, we are committed to creating positive change and uplifting communities across the nation. Our relentless dedication drives us to provide vital support and opportunities to those in need, empowering them to realize their full potential.",
+      "buttonText" : "Learn More",
+      "buttonUrl" : "/about-us",
+      "backgroundImageUrl" : "../../assets/images/campaigns-banner.png"
+    }
+  }
