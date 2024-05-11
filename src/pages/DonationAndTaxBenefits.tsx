@@ -7,7 +7,7 @@ import pageData from "../websiteData/taxBenefitsPageData.json";
 export function DonationAndTaxBenefits() {
   const heroSectionData = pageData.heroSection;
   return (
-    <Layout>
+    <Layout footerCta={true}>
       <HeroBanner
         heading={heroSectionData.title}
         description={heroSectionData.desc}

@@ -9,7 +9,7 @@ export function OurWork() {
   const heroSectionData = pageData.heroSection;
 
   return (
-    <Layout>
+    <Layout footerCta={true}>
       <HeroBanner
         heading={heroSectionData.title}
         description={heroSectionData.desc}

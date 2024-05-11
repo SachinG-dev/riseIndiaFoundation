@@ -61,6 +61,16 @@ h5,
   line-height: calc(
     42px + (90 - 83) * ((100vw - 320px) / (1920 - 320))
   ) !important;
+}
+
+h5,
+.h5 {
+  font-size: calc(
+    26px + (60 - 50) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
+  line-height: calc(
+    42px + (90 - 83) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
   color: var(--tertiary-color);
 }
 
