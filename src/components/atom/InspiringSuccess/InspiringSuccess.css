@@ -1,0 +1,15 @@
+.inspiring-success__box{
+    width: 85%;
+}
+
+@media screen and (max-width: 1200px) {
+    .inspiring-success__box{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .inspiring-success__box{
+        width: 100%;
+    }
+}

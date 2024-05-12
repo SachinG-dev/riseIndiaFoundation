@@ -13,15 +13,89 @@
     },
     {
       "type": "p",
-      "content": "Rise India Foundation is a team of enthusiastic individuals from diverse backgrounds working towards conscientizing the underprivileged citizen and empowering the deprived and marginalized communities leading to improvement in their livelihoods through various programs and activities."
+      "content": "Rise India Foundation is a team of enthusiastic individuals from diverse backgrounds working towards conscientizing the underprivileged citizen and empowering the deprived and marginalized communities leading to improvement in their livelihoods through various programs and activities.",
+      "contentClass": "pt-4"
+    
     },
     {
-      "type": "h3",
-      "content": "Our Mission"
+      "type": "h4",
+      "content": "Our Mission",
+      "contentClass":"pt-5"
     },
     {
       "type": "p",
       "content" : "We envision a world of globally educated citizens empowered to bring positive change and rid society of its evils and stigmas."
+    },
+    {
+      "type": "button",
+      "content":"Learn More",
+      "buttonUrl": "#",
+      "buttonClass": "mx-auto mt-5"
     }
-  ]
+  ],
+  "ContributionsSection" : {
+    "title": "<span class='text-secondary'>Impact we made</span> through your contributions",
+    "desc": "Discover the tangible impact we've made and the lives we've transformed through our unwavering commitment at Rise India Foundation. With the collective efforts of our dedicated team, generous supporters, and resilient communities, we have achieved remarkable milestones.",
+    "sectionClass": "py-5",
+    "sectionButtonText": "View All",
+    "sectionButtonType": "primary",
+    "sectionButtonURL": "#",
+    "contributionsCardData": [
+      {
+        "imageUrl" : "/assets/images/biharRelief.png",
+        "cardTitle": "Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "buttonUrl" : "#",
+        "buttonText":"Learn More"
+      },
+      {
+        "imageUrl" : "/assets/images/biharRelief.png",
+        "cardTitle": "Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "buttonUrl" : "#",
+        "buttonText":"Learn More"
+      },
+      {
+        "imageUrl" : "/assets/images/biharRelief.png",
+        "cardTitle": "Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "buttonUrl" : "#",
+        "buttonText":"Learn More"
+      },
+      {
+        "imageUrl" : "/assets/images/biharRelief.png",
+        "cardTitle": "Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "buttonUrl" : "#",
+        "buttonText":"Learn More"
+      }
+    ]
+  },
+  "InspiringSuccess":{
+    "title": "<span class='text-secondary'>Inspiring</span> Success Stories",
+    "sectionClass" : "py-5",
+    "InspiringSuccessCardData" : [
+      {
+        "imageURL" : "/assets/images/shaikhGulamMoin.png",
+        "cardTitle":"Bihar Relief Project",
+        "cardDesc" : "Shaikh Gulam Moin's journey showcases unwavering determination, scoring 91% in the SSC Exam despite financial hurdles. Rise India Foundation emerged as his guiding light, revealing a transformative government scholarship. With their adept assistance, the scholarship's arrival became a testament to patience and faith. Today, Shaikh Gulam Moin stands as a master of Pharmacy and MBA, a living testament to the adage: where there's a will, there's a way",
+        "cardAlignment": "Left",
+        "cardClasses" : "pt-5"
+      },
+      {
+        "imageURL" : "/assets/images/shaikhGulamMoin.png",
+        "cardTitle":"Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "cardAlignment": "Right",
+        "cardClasses" : "pt-5"
+      },
+      {
+        "imageURL" : "/assets/images/shaikhGulamMoin.png",
+        "cardTitle":"Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "cardAlignment": "Left",
+        "cardClasses" : "pt-5"
+      }
+    ]
+  }
 }
