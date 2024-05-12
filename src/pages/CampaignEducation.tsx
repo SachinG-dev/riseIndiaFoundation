@@ -8,8 +8,8 @@ export const CampaignEducation = () => {
   const campaignHeading = <h2 className="font-color-orange">Education</h2>;
   const campaignDescription = (
     <>
-      <p>
-        "With a firm belief that education is the key to breaking the cycle of
+      <p className="mt-4">
+        With a firm belief that education is the key to breaking the cycle of
         poverty and fostering sustainable development, We have campaigns that
         inspire, educate, and empower individuals, communities, and nations.
       </p>
@@ -19,25 +19,29 @@ export const CampaignEducation = () => {
         and resources to gender disparity and lack of digital literacy. Our team
         of passionate educators, volunteers, and experts work tirelessly to
         create and implement effective solutions that address these issues,
-        fostering an environment conducive to lifelong learning.";
+        fostering an environment conducive to lifelong learning.
       </p>
     </>
   );
   return (
     <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  />
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
       <GallerySection
         heading={campaignHeading}
         description={campaignDescription}
         images={[
           {
             src: "/assets/images/dhrushti.png",
-            alt: "Disaster-Relief",
+            alt: "Dhrushti",
             style: { width: "550px", height: "420px" },
           },
           {
             src: "/assets/images/rusum.png",
-            alt: "Education",
+            alt: "Rusum",
             style: { width: "550px", height: "420px" },
           },
         ]}

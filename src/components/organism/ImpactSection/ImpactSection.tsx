@@ -17,7 +17,7 @@ export function ImpactSection() {
               <Row>
                 <Col md={8}>
                   <h2 className="text-light fw-bold font-size-title">
-                    <span className="font-color-orange">Impact we made </span>{" "}
+                    <span className="font-color-orange">Impact we made </span>
                     through your contributions
                   </h2>
                 </Col>

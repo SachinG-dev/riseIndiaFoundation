@@ -68,7 +68,7 @@ export const DonationForm = () => {
   };
 
   const onBlurHandler = (
-    e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
 
@@ -143,7 +143,7 @@ export const DonationForm = () => {
   };
 
   const onChangeHandler = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
     switch (name) {
@@ -228,7 +228,7 @@ export const DonationForm = () => {
           onSubmit={handleSubmit}
         >
           <div className="mb-3 row">
-            <label className="form-label col-md-4 col-form-label font-green donation__form--label">
+            <label className="form-label col-md-4 col-form-label text-primary donation__form--label">
               Payment Method
             </label>
             <div className="col-md-8 radio">

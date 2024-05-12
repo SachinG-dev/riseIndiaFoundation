@@ -14,8 +14,8 @@ export function ExpandableSection({
   };
 
   return (
-    <div className="card">
-      <div className="card-header d-flex justify-content-between align-items-center">
+    <div className="card border-primary mb-4">
+      <div className="card-header border-bottom-0 d-flex justify-content-between align-items-center">
         <h5 className="mb-0">{title}</h5>
         <button
           className="btn btn-link"
@@ -23,7 +23,11 @@ export function ExpandableSection({
           aria-expanded={expanded ? "true" : "false"}
           aria-controls="collapseDescription"
         >
-          {expanded ? "-" : "+"}
+          {expanded ? (
+            <img src="/assets/svg/minus-sign.svg" alt="Minus Sign" />
+          ) : (
+            <img src="/assets/svg/plus-sign.svg" alt="Plus Sign" />
+          )}
         </button>
       </div>
       {expanded && (

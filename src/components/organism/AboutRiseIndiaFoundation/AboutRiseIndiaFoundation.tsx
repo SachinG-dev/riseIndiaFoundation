@@ -25,7 +25,7 @@ export function AboutRiseIndiaFoundation() {
         knowledge of essential life skills to become self-sustainable and
         independent.
       </p>
-      <p>
+      <div>
         <a
           href="/about-us"
           className="text-color font-size-22 fw-semibold text-decoration-none"
@@ -34,10 +34,10 @@ export function AboutRiseIndiaFoundation() {
           <img
             src="/assets/images/forward-arrow.svg"
             alt="forward-array-icon"
-            className="ml-2"
+            className="mb-1"
           />
         </a>
-      </p>
+      </div>
     </section>
   );
 }

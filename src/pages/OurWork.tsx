@@ -14,8 +14,6 @@ export function OurWork() {
         heading={heroSectionData.title}
         description={heroSectionData.desc}
         backgroundImageUrl={heroSectionData.backgroundImageUrl}
-        buttonText={heroSectionData.buttonText}
-        buttonURL={heroSectionData.buttonUrl}
       />
       <WhatWeDo />
       <OurCampaigns />

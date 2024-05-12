@@ -4,28 +4,23 @@ import "./Testimonials.css";
 
 const testimonialData: ProfileCardProps[] = [
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/bed2aba62f4a32283ec0c1e10d3f92cbaff5322e4c71f38ee444e418e199f4e6?apiKey=f2619df92a124e69bbb0f345b6e57c75&",
+    imageSrc: "/assets/images/karan-desai.png",
     imageAlt: "Profile picture of Sachin Bagal",
-    name: "Sachin Bagal",
-    title:
-      "Manager- Business Development and Project Manager MHPDS, Integra Micro Systems (P) Ltd.",
+    name: "Karan Desai",
+    title: "Founder, Avykka LLC, New York, USA",
     description:
-      "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety.",
+      "Rise India Foundation stands as a unique organization at the intersection of social development, women empowerment, education and disaster relief, taking a holistic grassroot approach. Their high-impact model includes organic empowerment, exemplifying authentic thought leadership for a sustainable future in disadvantaged communities.",
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/bed2aba62f4a32283ec0c1e10d3f92cbaff5322e4c71f38ee444e418e199f4e6?apiKey=f2619df92a124e69bbb0f345b6e57c75&",
+    imageSrc: "/assets/images/karan-desai.png",
     imageAlt: "Profile picture of Sachin Bagal",
-    name: "Sachin Bagal",
-    title:
-      "Manager- Business Development and Project Manager MHPDS, Integra Micro Systems (P) Ltd.",
+    name: " Sameer Talware",
+    title: "SR. Manager ER/IR, Reliance Retail Limited",
     description:
-      "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety.",
+      "Rise India Foundation has actively promoted women's rights through informative sessions in Mumbai stores, raising awareness about relevant Indian laws. Additionally, their commendable pandemic relief efforts, including distributing sanitizers, masks, food, and providing water in drought-prone areas of Maharashtra, have garnered my admiration. Kudos to the Rise India Team!",
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/bed2aba62f4a32283ec0c1e10d3f92cbaff5322e4c71f38ee444e418e199f4e6?apiKey=f2619df92a124e69bbb0f345b6e57c75&",
+    imageSrc: "/assets/images/karan-desai.png",
     imageAlt: "Profile picture of Sachin Bagal",
     name: "Sachin Bagal",
     title:

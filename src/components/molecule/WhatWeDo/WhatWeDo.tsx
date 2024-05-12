@@ -1,8 +1,8 @@
 export function WhatWeDo() {
   return (
     <div className="m-5">
-      <h1 className="text-center font-orange fw-bold m-5"> What we do</h1>
-      <p className="text-center m-5">
+      <h1 className="text-center text-secondary fw-bold"> What we do</h1>
+      <p className="text-center mx-5">
         Rise India Foundation is a team of enthusiastic individuals from diverse
         backgrounds working towards conscientizing the underprivileged citizen
         and empowering the deprived and marginalized communities leading to

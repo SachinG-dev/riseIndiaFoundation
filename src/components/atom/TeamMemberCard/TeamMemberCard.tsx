@@ -11,7 +11,7 @@ export function TeamMemberCard({
   description,
 }: TeamMemberCardProps) {
   return (
-    <div className="card shadow">
+    <div className="card shadow h-100 mt-3">
       <img
         src={imageUrl}
         className="card-img-top mx-auto mt-3 rounded-circle"

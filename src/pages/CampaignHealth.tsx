@@ -1,14 +1,14 @@
 import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
 import { Layout } from "../components/layout/";
 import { GallerySection } from "../components/molecule/GallerySection/GallerySection";
-import pageData from "../websiteData/campaignSkillPageData.json";
+import pageData from "../websiteData/campaignHealthPageData.json";
 
 export const CampaignHealth = () => {
   const heroSectionData = pageData.heroSection;
   const campaignHeading = <h2 className="font-color-orange">Health</h2>;
   const campaignDescription = (
     <>
-      <p>
+      <p className="mt-4">
         Rise India Foundation is dedicated to promoting health and well-being
         for all. Our mission is to bridge the gaps in healthcare access and
         deliver life-changing solutions to individuals and communities in need.

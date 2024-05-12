@@ -1,9 +1,7 @@
 {
-    "heroSection" : {
-      "title" : "<span class='text-secondary'>Education </span> is Empowerment",
-      "desc" : "We believe in spreading the power of education to all. We teach and guide students toward the field of their choice with moral values and behavior.",
-      "buttonText" : "Learn More",
-      "buttonUrl" : "/about-us",
-      "backgroundImageUrl" : "../../assets/images/campaigns-banner.png"
-    }
+  "heroSection": {
+    "title": "<span class='text-secondary'>Education </span> is Empowerment",
+    "desc": "We believe in spreading the power of education to all. We teach and guide students toward the field of their choice with moral values and behavior.",
+    "backgroundImageUrl": "../../assets/images/campaigns-banner.png"
   }
+}
