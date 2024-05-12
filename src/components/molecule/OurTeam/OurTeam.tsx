@@ -31,7 +31,7 @@ export function OurTeam() {
   const description =
     "Our team comprises experienced professionals from diverse backgrounds, each bringing unique skills and expertise to our organization. We value open communication and actively seek feedback to continually improve our initiatives and better serve the communities we work with. Rest assured, when you reach out to us, you will be greeted with warmth, empathy, and a genuine desire to make a positive impact.";
   return (
-    <div className="container mt-5">
+    <div className="container my-5">
       <div className="row">
         <div className="col">
           <p>{description}</p>

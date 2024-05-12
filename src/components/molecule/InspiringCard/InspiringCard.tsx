@@ -22,7 +22,9 @@ const InspiringCard = ({
         {isRightAligned && (
           <div className="col-md-8  p-3">
             <Card.Body className="text-end">
-              <Card.Title className="inspiring-card-title">{title}</Card.Title>
+              <Card.Title className="inspiring-card-title text-primary">
+                {title}
+              </Card.Title>
               <Card.Text>{description}</Card.Text>
             </Card.Body>
           </div>
@@ -33,7 +35,9 @@ const InspiringCard = ({
         {!isRightAligned && (
           <div className="col-md-8  p-3">
             <Card.Body>
-              <Card.Title className="inspiring-card-title">{title}</Card.Title>
+              <Card.Title className="inspiring-card-title text-primary">
+                {title}
+              </Card.Title>
               <Card.Text>{description}</Card.Text>
             </Card.Body>
           </div>

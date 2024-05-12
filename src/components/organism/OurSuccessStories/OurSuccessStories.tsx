@@ -11,10 +11,10 @@ export const OurSuccessStories = ({ embedId }: OurSuccessStoriesProps) => {
   };
 
   return (
-    <div className="success-stories">
+    <div className="success-stories my-5">
       <div className="video-container">
         <h1 className="text-center">
-          <div className="font-orange">Our Success Stories</div>
+          <div className="text-secondary">Our Success Stories</div>
           Changes that inspire Us
         </h1>
         <div className="video-responsive">

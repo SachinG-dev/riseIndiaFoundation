@@ -10,7 +10,7 @@ export const CampaignSkill = () => {
   );
   const campaignDescription = (
     <>
-      <p>
+      <p className="mt-4">
         Rise India Foundation is committed to fostering skill development and
         empowering individuals to reach their fullest potential. With a focus on
         equipping marginalized communities with essential skills, our

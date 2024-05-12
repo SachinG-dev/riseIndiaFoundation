@@ -1,7 +1,7 @@
 export function VolunteerInfoSection() {
   return (
     <div className="container p-5 text-center">
-      <h2 className="fw-bold text-center font-green">Volunteer</h2>
+      <h2 className="fw-bold text-center text-primary">Volunteer</h2>
       <p className="text-center">
         Rise India Foundation is a team of enthusiastic individuals from diverse
         backgrounds working towards conscientizing the underprivileged citizen
@@ -16,8 +16,19 @@ export function VolunteerInfoSection() {
         positive change and rid society of its evils and stigmas.
       </p>
       <p>
-        <a href="#" className="font-orange">
+        <a
+          href="/about-us"
+          className="text-secondary text-decoration-none d-flex justify-content-center align-items-center gap-1
+"
+        >
           Read more
+          <img
+            width="13.5px"
+            height="12px"
+            src="/assets/images/forward-arrow.svg"
+            alt="forward-array-icon"
+            className="mt-1"
+          />
         </a>
       </p>
     </div>

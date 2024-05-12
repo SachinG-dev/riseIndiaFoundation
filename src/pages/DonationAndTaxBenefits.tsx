@@ -12,6 +12,8 @@ export function DonationAndTaxBenefits() {
         heading={heroSectionData.title}
         description={heroSectionData.desc}
         backgroundImageUrl={heroSectionData.backgroundImageUrl}
+        buttonText={heroSectionData.buttonText}
+        buttonURL={heroSectionData.buttonUrl}
       />
       <DonationAndTaxBenefitsInfoSection />
       <DonationForm />

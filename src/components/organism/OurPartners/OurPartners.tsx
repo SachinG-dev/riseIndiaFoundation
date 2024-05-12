@@ -1,7 +1,9 @@
 export function OurPartner() {
   return (
     <div className="partners-section text-center py-5">
-      <h2 className="mb-5 fs-1">Our Partners</h2>
+      <h2 className="mb-5 fs-1">
+        Our <span className="text-secondary">Partners</span>
+      </h2>
       <div className="d-flex justify-content-around align-items-center flex-wrap py-5 bg-light">
         <div className="partner-logo">
           <img src="/assets/images/ourPartner1.png" alt="Partner 2" />

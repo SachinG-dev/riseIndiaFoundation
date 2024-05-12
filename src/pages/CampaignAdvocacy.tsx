@@ -1,14 +1,14 @@
 import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
 import { Layout } from "../components/layout/";
 import { GallerySection } from "../components/molecule/GallerySection/GallerySection";
-import pageData from "../websiteData/campaignSkillPageData.json";
+import pageData from "../websiteData/campaignAdvocacyPageData.json";
 
 export const CampaignAdvocacy = () => {
   const heroSectionData = pageData.heroSection;
   const campaignHeading = <h2 className="font-color-orange">Advocacy</h2>;
   const campaignDescription = (
     <>
-      <p>
+      <p className="mt-4">
         Rise India Foundation is committed to advocacy for social justice and
         driving positive change. Our unwavering mission is to amplify the voices
         of marginalized communities, champion their rights, and catalyze
@@ -41,7 +41,7 @@ export const CampaignAdvocacy = () => {
           },
           {
             src: "/assets/images/sattark.png",
-            alt: "Sattark",
+            alt: "Sanvidhan",
             style: { width: "550px", height: "420px" },
           },
         ]}

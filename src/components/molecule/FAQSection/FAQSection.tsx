@@ -58,8 +58,8 @@ export function FAQSection() {
   ];
 
   return (
-    <section className="container">
-      <div className="m-4">
+    <section className=" bg-light-gray p-5 mt-5">
+      <div className=" container">
         {faqs.map((faq, index) => (
           <div className="m-2">
             <ExpandableSection

@@ -25,7 +25,7 @@ export function OurCampaigns() {
                   title="Bihar Relief Project"
                   description="250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.
                             "
-                  link="#"
+                  link="/campaign"
                 />
               </Col>
               <Col>
@@ -34,7 +34,7 @@ export function OurCampaigns() {
                   title="Kerala Rehabilitation Project"
                   description="In 2018, Rise India Foundation team reached Chengannur, the flood affected area in Kerala. Under this, water purifiers and solar lamps were provided to schools, anganwadi and rickshaw stands.
                 "
-                  link="#"
+                  link="/campaign"
                 />
               </Col>
             </Row>

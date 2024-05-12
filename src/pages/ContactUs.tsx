@@ -8,7 +8,7 @@ import pageData from "../websiteData/contactUsPageData.json";
 export function ContactUs() {
   const heroSectionData = pageData.heroSection;
   return (
-    <Layout footerCta={true}>
+    <Layout>
       <HeroBanner
         heading={heroSectionData.title}
         description={heroSectionData.desc}
