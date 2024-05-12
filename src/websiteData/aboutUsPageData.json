@@ -5,5 +5,43 @@
     "buttonText" : "",
     "buttonUrl" : "",
     "backgroundImageUrl" : "../../assets/images/hero-banner-image.png"
+  },
+  "ContributionsSection" : {
+    "title": "<span class='text-secondary'>Impact we made</span> through your contributions",
+    "desc": "Discover the tangible impact we've made and the lives we've transformed through our unwavering commitment at Rise India Foundation. With the collective efforts of our dedicated team, generous supporters, and resilient communities, we have achieved remarkable milestones.",
+    "sectionClass": "py-5",
+    "sectionButtonText": "View All",
+    "sectionButtonType": "primary",
+    "sectionButtonURL": "#",
+    "contributionsCardData": [
+      {
+        "imageUrl" : "/assets/images/biharRelief.png",
+        "cardTitle": "Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "buttonUrl" : "#",
+        "buttonText":"Learn More"
+      },
+      {
+        "imageUrl" : "/assets/images/biharRelief.png",
+        "cardTitle": "Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "buttonUrl" : "#",
+        "buttonText":"Learn More"
+      },
+      {
+        "imageUrl" : "/assets/images/biharRelief.png",
+        "cardTitle": "Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "buttonUrl" : "#",
+        "buttonText":"Learn More"
+      },
+      {
+        "imageUrl" : "/assets/images/biharRelief.png",
+        "cardTitle": "Bihar Relief Project",
+        "cardDesc" : "250 families including widows were provided with dry ration, medicine and financial assistance. DHL BlueDart provided free logistic support to deliver relief material from Maharashtra to Bihar.",
+        "buttonUrl" : "#",
+        "buttonText":"Learn More"
+      }
+    ]
   }
 }
