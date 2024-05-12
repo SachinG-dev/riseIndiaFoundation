@@ -1,13 +1,10 @@
 import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
 import { Layout } from "../components/layout/";
 import { GallerySection } from "../components/molecule/GallerySection/GallerySection";
+import pageData from "../websiteData/campaignSkillPageData.json";
 
 export const CampaignHealth = () => {
-  const heroBannerHeading = <h1 className="font-color-orange">Health</h1>;
-
-  const description =
-    "We work for the state of complete physical, mental, and social well-being of our beneficiaries and not simply on any specific infirmity.";
-  const url = "/assets/images/campaigns-banner.png";
+  const heroSectionData = pageData.heroSection;
   const campaignHeading = <h2 className="font-color-orange">Health</h2>;
   const campaignDescription = (
     <>
@@ -28,7 +25,11 @@ export const CampaignHealth = () => {
   );
   return (
     <Layout>
-      <HeroBanner heading={heroBannerHeading} description={description} />
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
       <GallerySection
         heading={campaignHeading}
         description={campaignDescription}

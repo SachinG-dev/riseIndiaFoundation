@@ -1,0 +1,9 @@
+{
+  "heroSection": {
+    "title": "<span class='text-secondary'>Health</span>",
+    "desc": "We work for the state of complete physical, mental, and social well-being of our beneficiaries and not simply on any specific infirmity.",
+    "buttonText": "",
+    "buttonUrl": "",
+    "backgroundImageUrl": "../../assets/images/campaigns-banner.png"
+  }
+}

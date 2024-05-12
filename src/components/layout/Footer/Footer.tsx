@@ -1,26 +1,43 @@
 import { Col, Row } from "react-bootstrap";
 import "./Footer.css";
-import {Button} from "../../atom/Buttons/Button";
+import { Button } from "../../atom/Buttons/Button";
 
 interface footerProps {
   cta?: boolean;
 }
 export const Footer = ({ cta }: footerProps) => {
-  const onClickFunction = () => {
-    const onclickUrl = "https://www.google.com";
+  const onClickVolunteerFunction = () => {
+    const onclickUrl = "/volunteer";
+    window.location.href = onclickUrl;
+  };
+  const onClickDonationFunction = () => {
+    const onclickUrl = "/donation-and-tax-benefits";
+    window.location.href = onclickUrl;
+  };
+  const onClickCampaignFunction = () => {
+    const onclickUrl = "/campaign";
     window.location.href = onclickUrl;
   };
   return (
     <footer className="w-auto">
       {cta && (
         <div className=" row d-flex flex-column flex-md-row justify-content-center g-0">
-          <Button onClick={onClickFunction} className="col footer-button">
+          <Button
+            onClick={onClickVolunteerFunction}
+            className="col footer-button"
+          >
             Become a Volunteer
           </Button>
-          <Button onClick={onClickFunction} className="col footer-button">
+          <Button
+            onClick={onClickDonationFunction}
+            className="col footer-button"
+          >
             Make a Donation
           </Button>
-          <Button onClick={onClickFunction} className="col footer-button">
+          <Button
+            onClick={onClickCampaignFunction}
+            className="col footer-button"
+          >
             Support a Campaign
           </Button>
         </div>
@@ -28,16 +45,18 @@ export const Footer = ({ cta }: footerProps) => {
       <section className="d-flex flex-column justify-content-center bg footer-padding">
         <Row>
           <Col>
-            <img
-              src="/assets/images/rise-india-logo.png"
-              alt="Rise-India-Logo"
-            />
+            <a href="/">
+              <img
+                src="/assets/images/rise-india-logo.png"
+                alt="Rise-India-Logo"
+              />
+            </a>
           </Col>
           <Col className="footer-heading">
             <div>Support</div>
             <div className="footer-text d-flex flex-column">
               <a href="/contact-us">Contact us</a>
-              <a href="#">FAQs</a>
+              <a href="/contact-us/">FAQs</a>
               <a href="#">Terms & Conditions</a>
               <a href="#">Policies</a>
             </div>
@@ -64,7 +83,7 @@ export const Footer = ({ cta }: footerProps) => {
           <Col className="footer-heading">
             <div>Join us</div>
             <div className="footer-text d-flex flex-column">
-              <a href="/internship">Become a volunteer</a>
+              <a href="/volunteer">Become a volunteer</a>
               <a href="/donation-and-tax-benefits">Make a donation</a>
               <a href="/campaign">Support a Campaign</a>
             </div>

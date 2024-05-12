@@ -3,7 +3,7 @@ import { Home } from "../pages/Home";
 import { ContactUs } from "../pages/ContactUs";
 import { AboutUs } from "../pages/AboutUs";
 import { DonationAndTaxBenefits } from "../pages/DonationAndTaxBenefits";
-import { JoinUs } from "../pages/JoinUs";
+import { Volunteer } from "../pages/Volunteer";
 import { OurWork } from "../pages/OurWork";
 import { Internship } from "../pages/Internship";
 import { Campaign } from "../pages/Campaign";
@@ -30,8 +30,8 @@ export const router = createBrowserRouter([
     element: <DonationAndTaxBenefits />,
   },
   {
-    path: "/join-us",
-    element: <JoinUs />,
+    path: "/volunteer",
+    element: <Volunteer />,
   },
   {
     path: "/internship",

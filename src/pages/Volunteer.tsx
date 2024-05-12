@@ -6,7 +6,7 @@ import { JoinUsForm } from "../components/molecule/JoinUsForm/JoinUsForm";
 import { JoinUsCarousels } from "../components/organism/JoinUsCarousels/JoinUsCarousels";
 import pageData from "../websiteData/joinUsPageData.json";
 
-export function JoinUs() {
+export function Volunteer() {
   const heroSectionData = pageData.heroSection;
 
   return (
