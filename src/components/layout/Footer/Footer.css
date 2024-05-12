@@ -14,10 +14,12 @@
   font-weight: 700;
 }
 
-.footer-text {
+.footer-text a {
   font-size: 24px;
   font-weight: 28px;
   font-weight: 300;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .footer-divider {

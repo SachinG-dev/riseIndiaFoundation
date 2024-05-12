@@ -9,8 +9,14 @@ export function OurWork() {
   const heroSectionData = pageData.heroSection;
 
   return (
-    <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  buttonText={heroSectionData.buttonText} buttonURL={heroSectionData.buttonUrl}/>
+    <Layout footerCta={true}>
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+        buttonText={heroSectionData.buttonText}
+        buttonURL={heroSectionData.buttonUrl}
+      />
       <WhatWeDo />
       <OurCampaigns />
       <OurSuccessStories embedId="4kLviL8XwAI" />

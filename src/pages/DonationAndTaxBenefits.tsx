@@ -7,8 +7,12 @@ import pageData from "../websiteData/taxBenefitsPageData.json";
 export function DonationAndTaxBenefits() {
   const heroSectionData = pageData.heroSection;
   return (
-    <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  />
+    <Layout footerCta={true}>
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
       <DonationAndTaxBenefitsInfoSection />
       <DonationForm />
     </Layout>

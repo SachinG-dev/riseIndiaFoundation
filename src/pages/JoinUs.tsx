@@ -8,10 +8,16 @@ import pageData from "../websiteData/joinUsPageData.json";
 
 export function JoinUs() {
   const heroSectionData = pageData.heroSection;
-  
+
   return (
-    <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  buttonText={heroSectionData.buttonText} buttonURL={heroSectionData.buttonUrl}/>
+    <Layout footerCta={true}>
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+        buttonText={heroSectionData.buttonText}
+        buttonURL={heroSectionData.buttonUrl}
+      />
       <VolunteerInfoSection />
       <JoinUsCarousels />
       <JoinUsForm title="Join Us" sheetName="Join Us" />
