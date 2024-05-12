@@ -12,12 +12,13 @@ import pageData from "../websiteData/homePageData.json";
 export function Home() {
   const heroSectionData = pageData.heroSection;
   return (
-    <Layout>
+    <Layout footerCta={true}>
       <HeroBanner
         heading={heroSectionData.title}
         description={heroSectionData.desc}
         buttonText={heroSectionData.buttonText}
         backgroundImageUrl={heroSectionData.backgroundImageUrl}
+        buttonURL={heroSectionData.buttonUrl}
       />
       <AboutRiseIndiaFoundation />
       <ImpactSection />

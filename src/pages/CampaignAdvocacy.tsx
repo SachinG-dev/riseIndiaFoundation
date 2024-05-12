@@ -1,13 +1,10 @@
 import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
 import { Layout } from "../components/layout/";
 import { GallerySection } from "../components/molecule/GallerySection/GallerySection";
+import pageData from "../websiteData/campaignSkillPageData.json";
 
 export const CampaignAdvocacy = () => {
-  const heroBannerHeading = <h1 className="font-color-orange">Advocacy</h1>;
-
-  const description =
-    "Empowering Voices, Catalyzing Change. Rise India Foundation is dedicated to raising awareness, advocating for social justice, and driving impactful policy changes for a more equitable and inclusive society.";
-  const url = "/assets/images/campaigns-banner.png";
+  const heroSectionData = pageData.heroSection;
   const campaignHeading = <h2 className="font-color-orange">Advocacy</h2>;
   const campaignDescription = (
     <>
@@ -28,7 +25,11 @@ export const CampaignAdvocacy = () => {
   );
   return (
     <Layout>
-      <HeroBanner heading={heroBannerHeading} description={description} />
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
       <GallerySection
         heading={campaignHeading}
         description={campaignDescription}

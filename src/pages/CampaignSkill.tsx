@@ -1,15 +1,10 @@
 import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
 import { Layout } from "../components/layout/";
 import { GallerySection } from "../components/molecule/GallerySection/GallerySection";
+import pageData from "../websiteData/campaignSkillPageData.json";
 
 export const CampaignSkill = () => {
-  const heroBannerHeading = (
-    <h1 className="font-color-orange">Skill Development</h1>
-  );
-
-  const description =
-    "Unleashing Potential, Transforming Futures! We are dedicated to skill development, empowering individuals to unlock their full potential and create transformative futures.";
-  const url = "/assets/images/campaigns-banner.png";
+  const heroSectionData = pageData.heroSection;
   const campaignHeading = (
     <h2 className="font-color-orange">Skill Development</h2>
   );
@@ -34,7 +29,11 @@ export const CampaignSkill = () => {
   );
   return (
     <Layout>
-      <HeroBanner heading={heroBannerHeading} description={description} />
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
       <GallerySection
         heading={campaignHeading}
         description={campaignDescription}

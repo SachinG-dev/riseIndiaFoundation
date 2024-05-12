@@ -7,7 +7,7 @@ import pageData from "../websiteData/aboutUsPageData.json";
 export function AboutUs() {
   const heroSectionData = pageData.heroSection;
   return (
-    <Layout>
+    <Layout footerCta={true}>
       <HeroBanner
         heading={heroSectionData.title}
         description={heroSectionData.desc}

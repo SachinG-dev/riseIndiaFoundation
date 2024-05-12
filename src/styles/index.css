@@ -15,8 +15,12 @@ body {
 
 h1,
 .h1 {
-  font-size: calc( 20px + (60 - 20) * ((100vw - 320px) / (1920 - 320))) !important;
-  line-height: calc(22px + (90 - 22) *((100vw - 320px) / (1920 - 320))) !important;
+  font-size: calc(
+    20px + (60 - 20) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
+  line-height: calc(
+    22px + (90 - 22) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
   color: var(--tertiary-color);
 }
 
@@ -86,29 +90,29 @@ h5,
   color: var(--white-color);
 }
 
-.primary-arrow-cta__button{
+.primary-arrow-cta__button {
   font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1920 - 320)));
   line-height: 28px;
   text-decoration: none;
   color: var(--primary-color);
-  border:none;
+  border: none;
   background-color: transparent;
   display: flex;
   align-items: center;
 }
 
-.primary-arrow-cta__button::after{
+.primary-arrow-cta__button::after {
   display: inline-block;
   flex-shrink: 0;
-	width: 1rem;
-	height: 1rem;
-	content: "";
-	background-image: url("../../public/assets/images/green-arrow-icon.svg");
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: center;
-  margin-left:10px;
-  margin-top:2px;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background-image: url("../../public/assets/images/green-arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  margin-left: 10px;
+  margin-top: 2px;
 }
 
 .secondary-arrow-cta__button {
@@ -174,4 +178,8 @@ table {
 }
 .bg-light-gray {
   background-color: #f4f4f4;
+}
+
+.header--max-width {
+  max-width: 850px;
 }

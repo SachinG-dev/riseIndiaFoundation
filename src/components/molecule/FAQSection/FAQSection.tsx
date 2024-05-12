@@ -58,7 +58,7 @@ export function FAQSection() {
   ];
 
   return (
-    <div className="container">
+    <section className="container">
       <div className="m-4">
         {faqs.map((faq, index) => (
           <div className="m-2">
@@ -70,6 +70,6 @@ export function FAQSection() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
