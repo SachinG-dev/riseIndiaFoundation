@@ -1,7 +1,21 @@
 {
-  "heroSection": {
-    "title": "<span class='text-secondary'>Education </span> is Empowerment",
-    "desc": "We believe in spreading the power of education to all. We teach and guide students toward the field of their choice with moral values and behavior.",
-    "backgroundImageUrl": "../../assets/images/campaigns-banner.png"
+    "heroSection" : {
+      "title" : "<span class='text-secondary'>Education </span> is Empowerment",
+      "desc" : "We believe in spreading the power of education to all. We teach and guide students toward the field of their choice with moral values and behavior.",
+      "buttonText" : "Learn More",
+      "buttonUrl" : "/about-us",
+      "backgroundImageUrl" : "../../assets/images/campaigns-banner.png"
+    },
+    "WhatWeDoData" : [
+      {
+        "type": "h1",
+        "content" : "What we do"
+      },
+      {
+        "type": "p",
+        "content": "Rise India Foundation is a team of enthusiastic individuals from diverse backgrounds working towards conscientizing the underprivileged citizen and empowering the deprived and marginalized communities leading to improvement in their livelihoods through various programs and activities. It was registered as a Non-Governmental Organization in 2015 under Societies Registration Act,1860. Rise India Foundation is a team of enthusiastic individuals from diverse backgrounds working towards conscientizing the underprivileged citizen and empowering the deprived and marginalized communities leading to improvement in their livelihoods through various programs and activities. It was registered as a Non-Governmental Organization in 2015 under Societies Registration Act,1860.",
+        "contentClass": "pt-4"
+      
+      }
+    ]
   }
-}

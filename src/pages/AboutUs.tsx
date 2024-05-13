@@ -1,11 +1,12 @@
 import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
 import { AboutUsDetailsSection } from "../components/organism/AboutUsDetailsSection/AboutUsDetailsSection";
-import { ImpactSection } from "../components/organism/ImpactSection/ImpactSection";
 import { Layout } from "../components/layout";
 import pageData from "../websiteData/aboutUsPageData.json";
+import { Contributions } from "../components/atom/ContributionsSection/ContributionsSection";
 
 export function AboutUs() {
   const heroSectionData = pageData.heroSection;
+  const contributionsData = pageData.ContributionsSection;
   return (
     <Layout footerCta={true}>
       <HeroBanner
@@ -14,7 +15,14 @@ export function AboutUs() {
         backgroundImageUrl={heroSectionData.backgroundImageUrl}
       />
       <AboutUsDetailsSection />
-      <ImpactSection />
+      <Contributions 
+        title={contributionsData.title} 
+        desc={contributionsData.desc} 
+        cardData={contributionsData.contributionsCardData} 
+        sectionClass={contributionsData.sectionClass} 
+        sectionButtonText={contributionsData?.sectionButtonText}
+        sectionButtonURL={contributionsData?.sectionButtonURL}
+        />
     </Layout>
   );
 }
