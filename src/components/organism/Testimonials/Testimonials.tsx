@@ -28,36 +28,6 @@ const testimonialData: ProfileCardProps[] = [
     description:
       "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety.",
   },
-  {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/bed2aba62f4a32283ec0c1e10d3f92cbaff5322e4c71f38ee444e418e199f4e6?apiKey=f2619df92a124e69bbb0f345b6e57c75&",
-    imageAlt: "Profile picture of Sachin Bagal",
-    name: "Sachin Bagal",
-    title:
-      "Manager- Business Development and Project Manager MHPDS, Integra Micro Systems (P) Ltd.",
-    description:
-      "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety.",
-  },
-  {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/bed2aba62f4a32283ec0c1e10d3f92cbaff5322e4c71f38ee444e418e199f4e6?apiKey=f2619df92a124e69bbb0f345b6e57c75&",
-    imageAlt: "Profile picture of Sachin Bagal",
-    name: "Sachin Bagal",
-    title:
-      "Manager- Business Development and Project Manager MHPDS, Integra Micro Systems (P) Ltd.",
-    description:
-      "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety.",
-  },
-  {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/bed2aba62f4a32283ec0c1e10d3f92cbaff5322e4c71f38ee444e418e199f4e6?apiKey=f2619df92a124e69bbb0f345b6e57c75&",
-    imageAlt: "Profile picture of Sachin Bagal",
-    name: "Sachin Bagal",
-    title:
-      "Manager- Business Development and Project Manager MHPDS, Integra Micro Systems (P) Ltd.",
-    description:
-      "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety.",
-  },
 ];
 
 interface ProfileImageProps {
