@@ -1,6 +1,6 @@
 import { Button } from '../Buttons/Button';
 
-interface ContentBlock {
+export interface ContentBlock {
     type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'list' | 'p' | 'button' | string;
     content: string;
     contentClass?: string;
