@@ -12,7 +12,7 @@
     "sectionClass": "py-5",
     "sectionButtonText": "View All",
     "sectionButtonType": "primary",
-    "sectionButtonURL": "#",
+    "sectionButtonURL": "/our-work",
     "contributionsCardData": [
       {
         "imageUrl": "/assets/images/biharRelief.png",
