@@ -5,24 +5,7 @@ import pageData from "../websiteData/campaignEducationPageData.json";
 
 export const CampaignEducation = () => {
   const heroSectionData = pageData.heroSection;
-  const campaignHeading = <h2 className="font-color-orange">Education</h2>;
-  const campaignDescription = (
-    <>
-      <p className="mt-4">
-        With a firm belief that education is the key to breaking the cycle of
-        poverty and fostering sustainable development, We have campaigns that
-        inspire, educate, and empower individuals, communities, and nations.
-      </p>
-      <p>
-        Through our innovative initiatives, we strive to tackle various
-        educational challenges head-on, ranging from inadequate infrastructure
-        and resources to gender disparity and lack of digital literacy. Our team
-        of passionate educators, volunteers, and experts work tirelessly to
-        create and implement effective solutions that address these issues,
-        fostering an environment conducive to lifelong learning.
-      </p>
-    </>
-  );
+  const galleryData = pageData.GalleryData;
   return (
     <Layout>
       <HeroBanner
@@ -31,20 +14,11 @@ export const CampaignEducation = () => {
         backgroundImageUrl={heroSectionData.backgroundImageUrl}
       />
       <GallerySection
-        heading={campaignHeading}
-        description={campaignDescription}
-        images={[
-          {
-            src: "/assets/images/dhrushti.png",
-            alt: "Dhrushti",
-            style: { width: "550px", height: "420px" },
-          },
-          {
-            src: "/assets/images/rusum.png",
-            alt: "Rusum",
-            style: { width: "550px", height: "420px" },
-          },
-        ]}
+        title={galleryData.title}
+        description={galleryData.description}
+        images={galleryData.images}
+        sectionClasses={galleryData.sectionClasses}
+        titleClasses = {galleryData.titleClasses}
       />
     </Layout>
   );
