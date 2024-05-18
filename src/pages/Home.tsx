@@ -1,6 +1,6 @@
 import { HeroBanner } from "../components/organism/HeroBanner/HeroBanner";
 import { Testimonials } from "../components/organism/Testimonials/Testimonials";
-import { ProgramInitiatives } from "../components/organism/WorkInitiatives/ProgramInitiatives";
+import { ProgramInitiatives } from "../components/organism/programInitiatives/ProgramInitiatives";
 import { Layout } from "../components/layout/";
 import { OurPartner } from "../components/organism/OurPartners/OurPartners";
 import { OurReachSection } from "../components/organism/OurReachSection/OurReachSection";
@@ -14,6 +14,9 @@ export function Home() {
   const riseIndiaFoundationData = pageData.RiseIndiaSection;
   const contributionsData = pageData.ContributionsSection;
   const inspiringSuccessData = pageData.InspiringSuccess;
+  const initiativeProgram = pageData.InitiativesProgram;
+  const testimonialsSection = pageData.TestimonialsSection;
+
   return (
     <Layout>
       <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} buttonText={heroSectionData.buttonText} backgroundImageUrl={heroSectionData.backgroundImageUrl}  />
@@ -27,9 +30,9 @@ export function Home() {
         sectionButtonURL={contributionsData?.sectionButtonURL}
         />
       <InspiringSuccess title={inspiringSuccessData.title} sectionClasses={inspiringSuccessData.sectionClass} inspiringSuccessCardData={inspiringSuccessData.InspiringSuccessCardData}/>
-      <ProgramInitiatives />
-      <OurReachSection />
-      <Testimonials />
+      <ProgramInitiatives title={initiativeProgram.sectionTitle} overAllClasses={initiativeProgram.classes} cardData={initiativeProgram.cardsData} cardButtonText={initiativeProgram.cardButtonText} />
+      <OurReachSection  />
+      <Testimonials title={testimonialsSection.sectionTitle} testimonialData={testimonialsSection.TestimonialData} overAllClasses={testimonialsSection.overAllClasses}/>
       <OurPartner />
     </Layout>
   );
