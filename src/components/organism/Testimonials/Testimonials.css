@@ -1,126 +1,33 @@
-.testimonial-section {
-    background-color: hsl(0, 0%, 96%);
-}
-
-.testimonial-title {
-    font-size: 60px;
-    font-weight: 700;
-}
-
-.testimonial-card {
-    width: 100%;
-    box-shadow: 0px 10px 43px 0px rgba(0, 0, 0, 0.03);
+.testimonial__slider {
+    min-height: 500px;
+    box-shadow: 0px 10px 43px 0px #00000008;
     border-radius: 15px;
 }
 
-.text-color {
-    color: var(--secondary-color);
-}
-
-.card-profile-name {
-    color: var(--primary-color);
-}
-
-.fs-5-5 {
-    font-size: 18px;
-}
-
-.slick-initialized { 
-    overflow: hidden; 
-}
-
-.slick-list { 
-    margin: 0 -70px; 
-}
-  
-.slick-list .slick-slide > div {
-    padding: 0 80px;
-}
-
-.slick-prev, .slick-next {
-    top: unset;
-    bottom: 62px;
-    z-index: 1;
-}
-
-.slick-prev {
-    left: 12%;
-}
-
-.slick-next {
-    right: 12%;
-}
-
-.slick-prev::before, .slick-next::before {
-    content: none;
-}
-
-.slick-dots {
+.testimonials .slick-dots{
     position: relative;
-    bottom: 0;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    top:20px;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.slick-dots li button:before {
-    color: unset;
-    font-size: 16px;
-    line-height: 16px;
-    width: 16px;
-    height: 16px;
-    content: '';
-    border: 2px #535353 solid;
-    border-radius: 50%;
+.slick-dots li button:before{
+    font-size: 10px;
 }
 
-.slick-dots li.slick-active button:before {
-    color: #535353;
-    border: 8px #535353 solid;
+.testimonials .slick-next:before, .testimonials .slick-prev:before{
+    color: black;
+    font-size: 40px;
 }
 
-/* Medium devices (tablets, less than 1280px)  */
-@media (max-width: 1279.98px) { 
-    .slick-list { 
-        margin: 0 -50px; 
-    }
-      
-    .slick-list .slick-slide > div {
-        padding: 0 40px;
-    }
- }
+.testimonials .slick-next, .testimonials .slick-prev{
+    top:100%;
+}
 
-/* Medium devices (tablets, less than 1024px)  */
-@media (max-width: 1023.98px) { 
-    .slick-list { 
-        margin: 0 -30px; 
-    }
-      
-    .slick-list .slick-slide > div {
-        padding: 0 20px;
-    }
- }
+.testimonials .slick-next{
+    right: 30px;
+}
 
- /* Small devices (landscape phones, less than 600px)  */
-@media (max-width: 599.98px) { 
-    .slick-list { 
-        margin: 0 -10px; 
-    }
-      
-    .slick-list .slick-slide > div {
-        padding: 0 20px;
-    }
- }
-
-/* X-Small devices (portrait phones, less than 480px) */
-@media (max-width: 479.98px) { 
-    .slick-list { 
-        margin: 0 -4px; 
-    }
-      
-    .slick-list .slick-slide > div {
-        padding: 0 10px;
-    }
- }
-
-
-
+.testimonials .slick-prev{
+    left: 30px;
+}
