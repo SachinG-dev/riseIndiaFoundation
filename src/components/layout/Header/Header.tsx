@@ -1,7 +1,23 @@
-import { Button, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { useState } from "react";
+import {
+  Button,
+  Modal,
+  Nav,
+  Navbar,
+  NavDropdown,
+  Container,
+  Row,
+  Col,
+} from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { DonationPopup } from "../../organism/DonationPopup/DonationPopup";
 
 export function Header() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <header className="w-100 position-fixed z-3 shadow-sm bg-light">
       <Navbar bg="light" expand="lg">
@@ -48,12 +64,17 @@ export function Header() {
               </NavDropdown>
               <Nav.Link href="/contact-us">Contact us</Nav.Link>
             </Nav>
-            <Button variant="outline-success" className="ms-lg-5 py-2 px-4">
+            <Button
+              variant="outline-success"
+              className="ms-lg-5 py-2 px-4"
+              onClick={handleShow}
+            >
               Donate
             </Button>
           </Navbar.Collapse>
         </div>
       </Navbar>
+      <DonationPopup handleClose={handleClose} show={show} />
     </header>
   );
 }
