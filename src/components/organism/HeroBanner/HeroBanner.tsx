@@ -22,7 +22,7 @@ export const HeroBanner = ({
   };
   return (
     <div className="hero-section d-flex align-items-center position-relative" style={{ backgroundImage: `url(${backgroundImageUrl})` }}>
-      <div className="container">
+      <div className="container-lg">
         <div className="row position-relative z-1">
           <div className="col-12 col-md-9 col-lg-8">
               {heading && <h1 className="text-white" dangerouslySetInnerHTML={{ __html: heading }}></h1>}

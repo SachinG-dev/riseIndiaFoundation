@@ -5,5 +5,33 @@
       "buttonText" : "",
       "buttonUrl" : "",
       "backgroundImageUrl" : "../../assets/images/campaigns-banner.png"
+    },
+    "GalleryData": {
+      "title": "Education",
+      "description": [
+        {
+          "type": "p",
+          "content": "With a firm belief that education is the key to breaking the cycle of poverty and fostering sustainable development, We have campaigns that inspire, educate, and empower individuals, communities, and nations."
+        },
+        {
+          "type": "p",
+          "content": "Through our innovative initiatives, we strive to tackle various educational challenges head-on, ranging from inadequate infrastructure and resources to gender disparity and lack of digital literacy. Our team of passionate educators, volunteers, and experts work tirelessly to create and implement effective solutions that address these issues, fostering an environment conducive to lifelong learning.",
+          "contentClass": "pt-4"
+        }
+      ],
+      "sectionClasses": "py-5",
+      "titleClasses": "text-secondary",
+      "images": [
+        {
+          "imageURL": "/assets/images/dhrushti.png",
+          "imageTitle": "Dhrushti",
+          "imageAltTag":"Dhrushti"
+        },
+        {
+          "imageURL": "/assets/images/rusum.png",
+          "imageTitle": "Rusum",
+          "imageAltTag":"Rusum"
+        }
+      ]
     }
   }

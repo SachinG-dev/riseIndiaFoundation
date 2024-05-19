@@ -4,6 +4,7 @@
   --secondary-color: #ed7a03;
   --tertiary-color: #535353;
   --white-color: #fff;
+  --bg-light-gray : #f4f4f4;
 }
 
 body {
@@ -43,7 +44,7 @@ h3,
     32px + (32 - 18) * ((100vw - 320px) / (1920 - 320))
   ) !important;
   line-height: calc(
-    55px + (90 - 55) * ((100vw - 320px) / (1920 - 320))
+    35px + (50 - 35) * ((100vw - 320px) / (1920 - 320))
   ) !important;
   color: var(--tertiary-color);
   font-weight: 700 !important;
@@ -143,6 +144,10 @@ h5,
   margin-top:2px;
 }
 
+.bg-light-gray {
+  background-color: var(--bg-light-gray);
+}
+
 table {
   font-size: 14px;
 }
@@ -185,9 +190,6 @@ table {
 
 .font-45 {
   font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 320)));
-}
-.bg-light-gray {
-  background-color: #f4f4f4;
 }
 
 .hide-scrollbar {

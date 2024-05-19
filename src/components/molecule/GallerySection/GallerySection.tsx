@@ -1,42 +1,37 @@
-import { Gallery } from "react-grid-gallery";
+import { RichEditor, ContentBlock } from "../../atom/RichEditor/RichEditor";
 import "./GallerySection.css";
 
+type GallerySectionType = {
+    imageURL: string;
+    imageTitle?: string;
+    imageAltTag? : string;
+}
 interface GallerySectionProps {
-  heading?: React.ReactNode;
-  description?: React.ReactNode;
-  images?: { src: string; alt: string; style?: React.CSSProperties }[];
+  title: string;
+  description?: ContentBlock[];
+  sectionClasses ?: string;
+  titleClasses?: string;
+  descClasses?: string;
+  images: GallerySectionType[];
 }
 
-export const GallerySection = ({
-  heading,
-  description,
-  images = [],
-}: GallerySectionProps) => {
+export const GallerySection = ({ title, description, sectionClasses, titleClasses, descClasses, images}: GallerySectionProps) => {
   return (
-    <div className="gallerySection--margin">
-      <div className="gallerySection_margin--bottom">
-        {heading}
-        <p>{description}</p>
-      </div>
-      <div
-        className="gallerySection_wrapper d-flex flex-wrap justify-content-between gap-5
-"
-      >
-        {images.map((image, index) => (
-          <div className="position-relative">
-            <div className="h5 font-color-orange fw-bolder gallery-bg w-100 position-absolute bottom-0 z-index-2 d-flex align-items-center">
-              {image.alt}
+    <div className={`gallery-section ${sectionClasses}`}>
+      <div className="container-lg">
+      { title && <h2 className={titleClasses} dangerouslySetInnerHTML={{ __html: title }} />}
+       { description && <RichEditor contentBlocks={description} className={`px-0 pt-5 ${descClasses}`}/> }
+        <div className="row pt-5">
+          {images.map((data, index)=>{
+            return <div className="col-12 col-sm-6" key={index}>
+              <div className="gallery-section__image position-relative mt-4">
+                <img className="img-fluid" src={data.imageURL} alt={data.imageAltTag} />
+                {data.imageTitle && <h3 className="gallery-section__image--title position-absolute bottom-0 left-0 mb-0 d-flex align-items-end align-items-sm-center">{data.imageTitle}</h3>}
+              </div>
             </div>
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              style={image.style}
-              className=""
-            />
-          </div>
-        ))}
-      </div>{" "}
+          })}
+        </div>
+      </div>
     </div>
   );
 };

@@ -29,11 +29,11 @@ export function InspiringSuccess({title, sectionClasses, inspiringSuccessCardDat
                                 {data?.cardTitle && <h3 className="text-primary mb-0">{data.cardTitle}</h3>}
                                 {data?.cardDesc && <p className="mb-0">{data.cardDesc}</p>}
                             </div>
-                            <img className="img-fluid" src={data?.imageURL} alt="" />
+                            <img className="img-fluid inspiring-success__box--image" src={data?.imageURL} alt="" />
                         </div>
                         :
                         <div className="inspiring-success__box d-flex flex-column flex-sm-row me-auto gap-4 mt-5">
-                           <img className="img-fluid" src={data?.imageURL} alt="" />
+                           <img className="img-fluid inspiring-success__box--image" src={data?.imageURL} alt="" />
                             <div className="inspiring-success__box--content text-center text-sm-start">
                                 {data?.cardTitle && <h3 className="text-primary mb-0">{data.cardTitle}</h3>}
                                 {data?.cardDesc && <p className="mb-0">{data.cardDesc}</p>}
