@@ -70,7 +70,7 @@ export const Testimonials = ({
             <Slider {...settings}>
               {testimonialData.map((data, index) => {
                 return (
-                  <div className="testimonial__slider--container" key={index}>
+                  <div className="testimonial__slider--container">
                     <div className="testimonial__slider bg-white p-4 mx-4 text-center">
                       <img
                         src={data.testimonialImageUrl}

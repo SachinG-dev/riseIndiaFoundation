@@ -148,6 +148,10 @@ h5,
   background-color: var(--bg-light-gray);
 }
 
+.bg-light-gray {
+  background-color: var(--bg-light-gray);
+}
+
 table {
   font-size: 14px;
 }
