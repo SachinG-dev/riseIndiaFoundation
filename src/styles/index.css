@@ -4,7 +4,7 @@
   --secondary-color: #ed7a03;
   --tertiary-color: #535353;
   --white-color: #fff;
-  --bg-light-gray : #f4f4f4;
+  --bg-light-gray: #f4f4f4;
 }
 
 body {
@@ -92,7 +92,7 @@ h5,
   text-align: center;
   text-decoration: none;
   color: var(--white-color);
-  border:none;
+  border: none;
 }
 
 .primary-arrow-cta__button {
@@ -125,7 +125,7 @@ h5,
   line-height: 28px;
   text-decoration: none;
   color: var(--secondary-color);
-  border:none;
+  border: none;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -133,15 +133,19 @@ h5,
 .secondary-arrow-cta__button::after {
   display: inline-block;
   flex-shrink: 0;
-	width: 1rem;
-	height: 1rem;
-	content: "";
-	background-image: url("../../public/assets/images/orange-arrow-icon.svg");
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: center;
-  margin-left:10px;
-  margin-top:2px;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background-image: url("../../public/assets/images/orange-arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.bg-light-gray {
+  background-color: var(--bg-light-gray);
 }
 
 .bg-light-gray {
@@ -193,10 +197,24 @@ table {
 }
 
 .hide-scrollbar {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-	&::-webkit-scrollbar {
-		display: none;
-	}
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.light-gray-background {
+  background-color: #80808042;
+}
+
+.donation-popup-qr-code-section {
+  background-color: #00a65b;
+  padding: 13px;
+  border-radius: 10px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
