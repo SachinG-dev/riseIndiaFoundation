@@ -2,8 +2,8 @@
   "heroSection": {
     "title": "<span class='text-secondary'>About us</span>",
     "desc": "At Rise India Foundation, we are committed to creating positive change and uplifting communities across the nation. Our relentless dedication drives us to provide vital support and opportunities to those in need, empowering them to realize their full potential.",
-    "buttonText": "",
-    "buttonUrl": "",
+    "buttonText": "Learn more",
+    "buttonUrl": "/about-us",
     "backgroundImageUrl": "../../assets/images/hero-banner-image.png"
   },
   "ContributionsSection": {
@@ -12,7 +12,7 @@
     "sectionClass": "py-5",
     "sectionButtonText": "View All",
     "sectionButtonType": "primary",
-    "sectionButtonURL": "#",
+    "sectionButtonURL": "/our-work",
     "contributionsCardData": [
       {
         "imageUrl": "/assets/images/biharRelief.png",

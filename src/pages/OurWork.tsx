@@ -11,7 +11,11 @@ export function OurWork() {
 
   return (
     <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  buttonText={heroSectionData.buttonText} buttonURL={heroSectionData.buttonUrl}/>
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
       <RichEditor contentBlocks={whatWeDoData} className="text-center py-5" />
       <OurCampaigns />
       <OurSuccessStories embedId="4kLviL8XwAI" />

@@ -10,10 +10,15 @@ export function Internship() {
   const heroSectionData = pageData.heroSection;
   const volunteerData = pageData.VolunteerSectionData;
 
-
   return (
-    <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  buttonText={heroSectionData.buttonText} buttonURL={heroSectionData.buttonUrl}/>
+    <Layout footerCta={true}>
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+        buttonText={heroSectionData.buttonText}
+        buttonURL={heroSectionData.buttonUrl}
+      />
       <RichEditor contentBlocks={volunteerData} className="text-center py-5" />
       <JoinUsCarousels />
       <JoinUsForm title="Internship" sheetName="Internship" />
