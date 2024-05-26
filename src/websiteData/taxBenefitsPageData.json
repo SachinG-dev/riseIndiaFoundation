@@ -1,36 +1,35 @@
 {
-    "heroSection" : {
-      "title" : "Let's Make A Difference",
-      "desc" : "At Rise India Foundation, we are committed to creating positive change and uplifting communities across the nation. Our relentless dedication drives us to provide vital support and opportunities to those in need, empowering them to realize their full potential.",
-      "buttonText" : "",
-      "buttonUrl" : "",
-      "backgroundImageUrl" : "../../assets/images/hero-banner-image.png"
+  "heroSection": {
+    "title": "Let's Make A <span class='text-primary'>Difference</span>",
+    "desc": "At Rise India Foundation, we are committed to creating positive change and uplifting communities across the nation. Our relentless dedication drives us to provide vital support and opportunities to those in need, empowering them to realize their full potential.",
+    "buttonText": "Learn more",
+    "buttonUrl": "/about-us",
+    "backgroundImageUrl": "../../assets/images/hero-banner-image.png"
+  },
+  "TaxBenefitsData": [
+    {
+      "type": "h2",
+      "content": "<span class='text-secondary'>Donation</span> & Tax Benefits"
     },
-    "TaxBenefitsData" : [
-      {
-        "type": "h2",
-        "content" : "Donation & Tax Benefits"
-      },
-      {
-        "type": "p",
-        "content": "Rise India Foundation is a team of enthusiastic individuals from diverse backgrounds working towards conscientizing the underprivileged citizen and empowering the deprived and marginalized communities leading to improvement in their livelihoods through various programs and activities. It was registered as a Non-Governmental Organization in 2015 under Societies Registration Act, 1860.",
-        "contentClass": "pt-4"
-      
-      },
-      {
-        "type": "h4",
-        "content": "Tax Exemptions",
-        "contentClass":"pt-5"
-      },
-      {
-        "type": "p",
-        "content" : "We envision a world of globally educated citizens empowered to bring positive change and rid society of its evils and stigmas."
-      },
-      {
-        "type": "button",
-        "content":"Read More",
-        "buttonUrl": "#",
-        "buttonClass": "mx-auto mt-5"
-      }
-    ]
-  }
+    {
+      "type": "p",
+      "content": "Rise India Foundation is a team of enthusiastic individuals from diverse backgrounds working towards conscientizing the underprivileged citizen and empowering the deprived and marginalized communities leading to improvement in their livelihoods through various programs and activities. It was registered as a Non-Governmental Organization in 2015 under Societies Registration Act, 1860.",
+      "contentClass": "pt-4"
+    },
+    {
+      "type": "h4",
+      "content": "Tax Exemptions",
+      "contentClass": "pt-5"
+    },
+    {
+      "type": "p",
+      "content": "We envision a world of globally educated citizens empowered to bring positive change and rid society of its evils and stigmas."
+    },
+    {
+      "type": "button",
+      "content": "Read More",
+      "buttonUrl": "/our-work",
+      "buttonClass": "mx-auto mt-5"
+    }
+  ]
+}

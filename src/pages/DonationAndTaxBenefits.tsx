@@ -8,9 +8,18 @@ export function DonationAndTaxBenefits() {
   const heroSectionData = pageData.heroSection;
   const taxBenefitsData = pageData.TaxBenefitsData;
   return (
-    <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} backgroundImageUrl={heroSectionData.backgroundImageUrl}  />
-      <RichEditor contentBlocks={taxBenefitsData} className="text-center py-5"/>
+    <Layout footerCta={true}>
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+        buttonURL={heroSectionData.buttonUrl}
+        buttonText={heroSectionData.buttonText}
+      />
+      <RichEditor
+        contentBlocks={taxBenefitsData}
+        className="text-center py-5"
+      />
       <DonationForm />
     </Layout>
   );

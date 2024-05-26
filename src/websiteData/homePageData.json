@@ -27,7 +27,7 @@
     },
     {
       "type": "button",
-      "content": "Learn More",
+      "content": "Read more",
       "buttonUrl": "/about-us",
       "buttonClass": "mx-auto mt-5"
     }
@@ -97,57 +97,52 @@
       }
     ]
   },
-  "InitiativesProgram":{
+  "InitiativesProgram": {
     "sectionTitle": "<span class='text-secondary'>Our Work</span> Initiatives and Programs",
-    "cardButtonText" : "Learn More",
-    "cardsData" : [
+    "cardButtonText": "Learn More",
+    "cardButtonClass": "text-gray",
+    "cardsData": [
       {
         "iconSrc": "/assets/svg/education-logo.svg",
         "cardTitle": "Education",
-        "cardDescription":
-          "Illuminating Minds, Empowering Futures. Our education initiatives ensure access to quality education for underprivileged children, equipping them with knowledge and skills to break the cycle of poverty.",
+        "cardDescription": "Illuminating Minds, Empowering Futures. Our education initiatives ensure access to quality education for underprivileged children, equipping them with knowledge and skills to break the cycle of poverty.",
         "buttonURL": "/campaign/education"
       },
       {
         "iconSrc": "/assets/svg/health-logo.svg",
         "cardTitle": "Health",
-        "cardDescription":
-          "Nurturing Wellness, Saving Lives. Our healthcare programs provide essential medical services, promote preventive care, and raise awareness to improve the well-being of communities in need.",
+        "cardDescription": "Nurturing Wellness, Saving Lives. Our healthcare programs provide essential medical services, promote preventive care, and raise awareness to improve the well-being of communities in need.",
         "buttonURL": "/campaign/health"
       },
       {
         "iconSrc": "/assets/svg/disaster-relief.svg",
         "cardTitle": "Disaster Relief",
-        "cardDescription":
-          "Rebuilding Lives, Restoring Hope. We swiftly respond to natural disasters, offering immediate relief, shelter, and support to affected individuals and communities, aiding in their recovery and resilience.",
+        "cardDescription": "Rebuilding Lives, Restoring Hope. We swiftly respond to natural disasters, offering immediate relief, shelter, and support to affected individuals and communities, aiding in their recovery and resilience.",
         "buttonURL": "/campaign/health"
       },
       {
         "iconSrc": "/assets/svg/advocacy-logo.svg",
         "cardTitle": "Advocacy",
-        "cardDescription":
-          "Amplifying Voices, Driving Change. Through advocacy efforts, we strive to bring attention to social issues, drive policy changes, and create a platform for marginalized communities to be heard.",
+        "cardDescription": "Amplifying Voices, Driving Change. Through advocacy efforts, we strive to bring attention to social issues, drive policy changes, and create a platform for marginalized communities to be heard.",
         "buttonURL": "/campaign/advocacy"
       },
       {
         "iconSrc": "/assets/svg/skill-development-logo.svg",
         "cardTitle": "Skill Development",
-        "cardDescription":
-          "Unlocking Potential, Opening Doors. Our skill development programs provide vocational training and mentorship, empowering individuals with marketable skills to enhance employability and achieve self-sufficiency.",
+        "cardDescription": "Unlocking Potential, Opening Doors. Our skill development programs provide vocational training and mentorship, empowering individuals with marketable skills to enhance employability and achieve self-sufficiency.",
         "buttonURL": "/campaign/skill"
       }
     ],
-    "classes" :
-      {
-        "sectionClasses": "bg-light-gray pt-7 pb-8",
-        "sectionTitleClasses": "pb-5",
-        "cardClasses" : "",
-        "cardTitleClass": "text-primary"
-      }
+    "classes": {
+      "sectionClasses": "bg-light-gray pt-7 pb-8",
+      "sectionTitleClasses": "pb-5",
+      "cardClasses": "",
+      "cardTitleClass": "text-primary"
+    }
   },
   "OurReachSection": {
-    "sectionTitle":"Our <span class='text-secondary'>Reach</span>",
-    "overAllClasses" : {
+    "sectionTitle": "Our <span class='text-secondary'>Reach</span>",
+    "overAllClasses": {
       "sectionClasses": "",
       "sectionTitleClasses": ""
     },
@@ -166,49 +161,42 @@
       }
     ]
   },
-  "TestimonialsSection":{
+  "TestimonialsSection": {
     "sectionTitle": "<span class='text-secondary'>“Testimonials of</span> Success and Excellence”",
-    "overAllClasses":{
-      "sectionClasses":"bg-light-gray pt-7 pb-8",
-      "sectionTitleClasses":"mb-6 text-center"
+    "overAllClasses": {
+      "sectionClasses": "bg-light-gray pt-7 pb-8",
+      "sectionTitleClasses": "mb-6 text-center"
     },
-    "TestimonialData" : [
+    "TestimonialData": [
       {
         "testimonialImageUrl": "/assets/images/karan-desai.png",
         "name": "Karan Desai",
         "userTitle": "Founder, Avykka LLC, New York, USA",
-        "userDesc":
-          "Rise India Foundation stands as a unique organization at the intersection of social development, women empowerment, education and disaster relief, taking a holistic grassroot approach. Their high-impact model includes organic empowerment, exemplifying authentic thought leadership for a sustainable future in disadvantaged communities."
+        "userDesc": "Rise India Foundation stands as a unique organization at the intersection of social development, women empowerment, education and disaster relief, taking a holistic grassroot approach. Their high-impact model includes organic empowerment, exemplifying authentic thought leadership for a sustainable future in disadvantaged communities."
       },
       {
         "testimonialImageUrl": "/assets/images/karan-desai.png",
         "name": " Sameer Talware",
         "userTitle": "SR. Manager ER/IR, Reliance Retail Limited",
-        "userDesc":
-          "Rise India Foundation has actively promoted women's rights through informative sessions in Mumbai stores, raising awareness about relevant Indian laws. Additionally, their commendable pandemic relief efforts, including distributing sanitizers, masks, food, and providing water in drought-prone areas of Maharashtra, have garnered my admiration. Kudos to the Rise India Team!"
+        "userDesc": "Rise India Foundation has actively promoted women's rights through informative sessions in Mumbai stores, raising awareness about relevant Indian laws. Additionally, their commendable pandemic relief efforts, including distributing sanitizers, masks, food, and providing water in drought-prone areas of Maharashtra, have garnered my admiration. Kudos to the Rise India Team!"
       },
       {
         "testimonialImageUrl": "/assets/images/karan-desai.png",
         "name": "Sachin Bagal",
-        "userTitle":
-          "Manager- Business Development and Project Manager MHPDS, Integra Micro Systems (P) Ltd.",
-        "userDesc":
-          "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety."
+        "userTitle": "Manager- Business Development and Project Manager MHPDS, Integra Micro Systems (P) Ltd.",
+        "userDesc": "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety."
       },
       {
         "testimonialImageUrl": "/assets/images/karan-desai.png",
         "name": " Sameer Talware",
         "userTitle": "SR. Manager ER/IR, Reliance Retail Limited",
-        "userDesc":
-          "Rise India Foundation has actively promoted women's rights through informative sessions in Mumbai stores, raising awareness about relevant Indian laws. Additionally, their commendable pandemic relief efforts, including distributing sanitizers, masks, food, and providing water in drought-prone areas of Maharashtra, have garnered my admiration. Kudos to the Rise India Team!"
+        "userDesc": "Rise India Foundation has actively promoted women's rights through informative sessions in Mumbai stores, raising awareness about relevant Indian laws. Additionally, their commendable pandemic relief efforts, including distributing sanitizers, masks, food, and providing water in drought-prone areas of Maharashtra, have garnered my admiration. Kudos to the Rise India Team!"
       },
       {
         "testimonialImageUrl": "/assets/images/karan-desai.png",
         "name": "Sachin Bagal",
-        "userTitle":
-          "Manager- Business Development and Project Manager MHPDS, Integra Micro Systems (P) Ltd.",
-        "userDesc":
-          "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety."
+        "userTitle": "Manager- Business Development and Project Manager MHPDS, Integra Micro Systems (P) Ltd.",
+        "userDesc": "During the Covid-19 pandemic, Rise India Foundation brought smiles to the faces of struggling daily wagers and laborers across the country by providing essential food packets. Additionally, despite budget constraints, the foundation supplied vital precautionary products like sanitizers and masks to BEST workers and Police officials, demonstrating their commitment to safety."
       }
     ]
   }

@@ -18,21 +18,43 @@ export function Home() {
   const testimonialsSection = pageData.TestimonialsSection;
 
   return (
-    <Layout>
-      <HeroBanner heading={heroSectionData.title} description={heroSectionData.desc} buttonText={heroSectionData.buttonText} backgroundImageUrl={heroSectionData.backgroundImageUrl}  />
-      <RichEditor contentBlocks={riseIndiaFoundationData} className="py-5 text-center"/>
-      <Contributions 
-        title={contributionsData.title} 
-        desc={contributionsData.desc} 
-        cardData={contributionsData.contributionsCardData} 
-        sectionClass={contributionsData.sectionClass} 
+    <Layout footerCta={true}>
+      <HeroBanner
+        heading={heroSectionData.title}
+        description={heroSectionData.desc}
+        buttonText={heroSectionData.buttonText}
+        buttonURL={heroSectionData.buttonUrl}
+        backgroundImageUrl={heroSectionData.backgroundImageUrl}
+      />
+      <RichEditor
+        contentBlocks={riseIndiaFoundationData}
+        className="text-gray py-5 text-center"
+      />
+      <Contributions
+        title={contributionsData.title}
+        desc={contributionsData.desc}
+        cardData={contributionsData.contributionsCardData}
+        sectionClass={contributionsData.sectionClass}
         sectionButtonText={contributionsData?.sectionButtonText}
         sectionButtonURL={contributionsData?.sectionButtonURL}
-        />
-      <InspiringSuccess title={inspiringSuccessData.title} sectionClasses={inspiringSuccessData.sectionClass} inspiringSuccessCardData={inspiringSuccessData.InspiringSuccessCardData}/>
-      <ProgramInitiatives title={initiativeProgram.sectionTitle} overAllClasses={initiativeProgram.classes} cardData={initiativeProgram.cardsData} cardButtonText={initiativeProgram.cardButtonText} />
-      <OurReachSection  />
-      <Testimonials title={testimonialsSection.sectionTitle} testimonialData={testimonialsSection.TestimonialData} overAllClasses={testimonialsSection.overAllClasses}/>
+      />
+      <InspiringSuccess
+        title={inspiringSuccessData.title}
+        sectionClasses={inspiringSuccessData.sectionClass}
+        inspiringSuccessCardData={inspiringSuccessData.InspiringSuccessCardData}
+      />
+      <ProgramInitiatives
+        title={initiativeProgram.sectionTitle}
+        overAllClasses={initiativeProgram.classes}
+        cardData={initiativeProgram.cardsData}
+        cardButtonText={initiativeProgram.cardButtonText}
+      />
+      <OurReachSection />
+      <Testimonials
+        title={testimonialsSection.sectionTitle}
+        testimonialData={testimonialsSection.TestimonialData}
+        overAllClasses={testimonialsSection.overAllClasses}
+      />
       <OurPartner />
     </Layout>
   );
