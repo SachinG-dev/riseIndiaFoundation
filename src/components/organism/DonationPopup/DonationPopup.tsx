@@ -43,14 +43,6 @@ export function DonationPopup({ show, handleClose }: DonationPopupProps) {
               </div>
             </Col>
           </Row>
-          <Row className="text-center">
-            <Col className="">
-              <p className="d-flex">or pay with UPI id</p>
-              <p className="light-gray-background  rounded p-2">
-                UPI ID - 358835353@paytm
-              </p>
-            </Col>
-          </Row>
         </Container>
       </Modal.Body>
     </Modal>
