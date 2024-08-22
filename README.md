@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+how to deploy the code ;
+
+1. checkout to master
+2. install the packages
+3. update the code
+4. run the build
+5. copy all the build file outside the build folder and delete all the react files
+6. create a new branch
+7. push the code
+8. open hostinger
+9. delete the existing project
+   1. go to file system and delete the public folder
+10. go to the git setting :
+    url : https://hpanel.hostinger.com/websites/riseindiafoundation.in/advanced/git?redirectLocation=side_menu
+11. deploy the new code
+    1. delete the exist added manage repro
+    2. create a new manage repo with the new brnach name
+    3. click on the deploy
