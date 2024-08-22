@@ -24,7 +24,14 @@ export function DonationPopup({ show, handleClose }: DonationPopupProps) {
           <Row className="mb-3">
             <Col className="d-flex justify-content-around">
               <Button variant="success">UPI/QR</Button>
-              <Button variant="outline-success">Donation Link</Button>
+              <Button
+                variant="outline-success"
+                onClick={() =>
+                  window.open("https://easebuzz.in/pay/RiseIndia", "_blank")
+                }
+              >
+                Donation Link
+              </Button>
             </Col>
           </Row>
           <Row className="text-center my-3">
